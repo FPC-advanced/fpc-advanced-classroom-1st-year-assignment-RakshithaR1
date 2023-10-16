@@ -90,7 +90,7 @@ void output(int sum);
 2o
 ```
 
----
+---in
 
 05.  Write a program to find GCD _(HCF)_ of two numbers.
 
