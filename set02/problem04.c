@@ -25,8 +25,9 @@ int sum_composite_numbers(int n,int a[n])
       for(int j=2;j<=a[i]/2;j++){
         if(a[i]%j==0){
         sum+=a[i];
-        break;
+        
         }
+        break;
       }
     }
    
