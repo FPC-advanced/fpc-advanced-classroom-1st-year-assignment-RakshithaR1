@@ -21,5 +21,5 @@ void input(int *a,int *b)
     input(&x,&y);
     add(x,y,&sum);
     output(x,y,sum);
-    return sum;
+    return 0;
   }
