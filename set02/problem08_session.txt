@@ -19,3 +19,26 @@ SerializationVersion: 1.1.0.1
 Transcript started, output file is c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem08_session.txt
 PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1> gcc -g "c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem08.c" -o "c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem08.exe" 2>&1
 
+PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1> c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem08.exe
+PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1> gcc -g "c:\Users\raksh\github-classroom\FPC-
+advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem08.c" -o "c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-cla
+ssroom-1st-year-assignment-RakshithaR1\set02\problem08.exe" 2>&1
+PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1> c:\Users\raksh\github-classroom\FPC-advanced
+\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem08.exe
+Enter the number of triangles 2
+1 Triangle:
+Enter the base and altitude of the triangle: 2 3
+2 Triangle:
+Enter the base and altitude of the triangle: 4 6
+The smallest triangle out of 2 triangles with base and height (2, 3)(4, 6)is the triangle having base 2.00,height 3.00 and area 3.00
+PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1> git add .
+
+PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1> git commit -m "committed 10/17/2023, 7:43:18 PM"
+
+PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1> git push
+
+PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20231017194332
+**********************
