@@ -8,4 +8,7 @@ void input(float *x1,float *y1,float *x2,float *y2)
   printf("Enter the x and y co-ordinates of the 2nd point: ");
   scanf("%f %f",x2,y2);
 }
-float 
+float find_distance(float x1,float y1,float x2,float y2)
+{
+  
+}
