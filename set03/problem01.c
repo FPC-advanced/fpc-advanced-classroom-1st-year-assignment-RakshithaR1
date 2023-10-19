@@ -18,6 +18,7 @@ float find_distance(float x1,float y1,float x2,float y2)
   float epsilon=0.00001;
   do{
     pre_guess=guess;
-    guess=0.5*(guess+sqr_dist/guess)
-  }
+    guess=0.5*(guess+sqr_dist/guess);
+   }while(fabs())
+   
 }
