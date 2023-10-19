@@ -21,3 +21,14 @@ PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-
 
 PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1> c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem04.exe
 fibo(3)=2
+PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1> git add .
+
+PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1> git commit -m "committed 10/19/2023, 10:07:36 PM"
+
+PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1> git push
+
+PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20231019220753
+**********************
