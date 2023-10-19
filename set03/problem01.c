@@ -10,15 +10,27 @@ void input(float *x1,float *y1,float *x2,float *y2)
 }
 float find_distance(float x1,float y1,float x2,float y2)
 {
-  float dx=x1-y1;
+  float dx=x2-x1;
   float dy=y2-y1;
   float sqr_dist=(dx*dx)+(dy*dy);
-  float guess=sqr_dist;
+   float guess=sqr_dist;
   float pre_guess;
-  float epsilon=0.00001;
+  float epsilon=0.00000;
   do{
     pre_guess=guess;
     guess=0.5*(guess+sqr_dist/guess);
-   }while(fabs())
-   
+   }while(fabs(guess-pre_guess)>epsilon);
+   return guess;
+}
+void output(float x1,float y1,float x2,float y2,float distance)
+{
+  printf("The distance between the points (%f,%f) and (%f,%f) is %f",x1,y1,x2,y2,distance);
+}
+int main()
+{
+  float x1,y1,x2,y2,dis_point;
+  input(&x1,&y1,&x2,&y2);
+  dis_point=find_distance(x1,y1,x2,y2);
+  output(x1,y1,x2,y2,dis_point);
+  return 0;
 }
