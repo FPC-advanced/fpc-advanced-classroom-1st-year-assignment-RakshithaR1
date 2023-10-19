@@ -23,3 +23,8 @@ PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-
 
 PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1> git push
 
+PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1> Start-Transcript -Path "c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem01_session.txt"
+**********************
+Windows PowerShell transcript end
+End time: 20231019164509
+**********************
