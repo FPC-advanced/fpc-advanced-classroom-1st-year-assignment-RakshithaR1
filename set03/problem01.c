@@ -13,5 +13,7 @@ float find_distance(float x1,float y1,float x2,float y2)
   float dx=x1-y1;
   float dy=y2-y1;
   float sqr_dist=(dx*dx)+(dy*dy);
-  do
+  float guess=sqr_dist;
+  float pre_guess;
+  float epsilon
 }
