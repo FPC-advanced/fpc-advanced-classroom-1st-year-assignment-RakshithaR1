@@ -19,7 +19,7 @@ Point input_point()
 }
 Line input_line()
 {
-  Line l1;
+    Line l1;
   printf("Enter the co-ordinates of the 1st point:\n ");
   l1.p1=input_point();
   printf("Enter the co-ordinates of the 2nd point:\n ");
