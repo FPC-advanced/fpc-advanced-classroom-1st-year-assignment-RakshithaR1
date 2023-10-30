@@ -2,3 +2,4 @@ Starting program:
 No executable specified, use `target exec'.
 No symbol table is loaded.  Use the "file" command.
 No symbol table is loaded.  Use the "file" command.
+No symbol table is loaded.  Use the "file" command.
