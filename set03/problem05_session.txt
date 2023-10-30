@@ -21,3 +21,24 @@ PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-
 
 PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1> c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem05.exe
 The prime numbers between 2 to 35 is 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31,
+PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1> git add .
+
+PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1> git commit -m "committed 10/30/2023, 10:10:25 AM"
+
+PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1> git push
+
+PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1> gcc -g "c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem05.c" -o "c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem05.exe" 2>&1
+
+PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1> c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem05.exe
+The prime numbers between 2 to 5 is 2, 3, 5
+PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1> git add .
+
+PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1> git commit -m "committed 10/30/2023, 10:11:37 AM"
+
+PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1> git push
+
+PS C:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20231030101146
+**********************
