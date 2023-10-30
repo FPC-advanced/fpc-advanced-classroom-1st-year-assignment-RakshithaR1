@@ -11,9 +11,9 @@ typedef struct point {
 
 int input_n()
 {
-  Polygon n;
+  int  n;
   printf("Enter the number of sides of the polygon: ");
-  scanf("%d",&n.sides);
+  scanf("%d",&n);
   return n;
 }
 Point input_point(char *promt_msg);
