@@ -9,24 +9,39 @@ int input_array_size()
 }
 void init_array(int n,int a[n])
 {
-  a[0]=2;
-  for(int i=1;i<n;i++)
+  for(int i=2;i<=n;i++)
   {
-    a[i]=a[i-1]+1; 
+    a[i]=1;
   }
 }
 void erotosthenes_sieve(int n,int a[n])
 {
-   
+   for(int i=2;i*i<=n;i++)
+   {
+    if(a[i]==1)
+    {
+      for(int j=i*i;j<=n;j+=i)
+      {
+        a[j]=0;
+      }
+    }
+   }
 
 }
 void output(int n,int a[n])
 {
-  printf("The prime numbers between 2 and %d is ",n);
-  for(int i=0;i<n;i++)
+ printf("The prime numbers between 2 to %d is ",n);
+ for(int i=2;i<=n;i++)
+ {
+  if(a[i]==1)
   {
-    printf("%d",a[i]);
+    printf("%d",i);
+    if(i !=n )
+    {
+      printf(", ");
+    }
   }
+ }
 }
 int main()
 {
