@@ -1,15 +1,13 @@
 //program to find the perimeter of a polygon
 #include<stdio.h>
-struct point {
+typedef struct point {
     float x,y;
-}; 
-typedef struct point Point;
- struct polygon {
+}Point;
+ typedef struct polygon {
     int sides;
     Point p[100];
     float perimeter;
-};
-typedef struct polygon Polygon;
+ }Polygon;
 
 int input_n()
 {
