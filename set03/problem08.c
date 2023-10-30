@@ -11,15 +11,15 @@ typedef struct point {
 
 int input_n()
 {
-  int n;
+  Polygon n;
   printf("Enter the number of sides of the polygon: ");
-  scanf("%d",&n);
+  scanf("%d",&n.sides);
   return n;
 }
 Point input_point(char *promt_msg);
 int input_polygon(Polygon *p)
 {
-  
+
 }
 float find_distance(Point a, Point b);
 void find_perimeter(Polygon* p);
