@@ -24,6 +24,14 @@ void add(int num1, int den1, int num2, int den2, int *res_num, int *res_den)
         a=temp;
       }
       *res_den=(den1*den2)/a;
+      if(den1>den2)
+      {
+        num2=num2*a;
+        den2=den2*a;
+      }else{
+        num1=num1*a;
+        den1=den1*a;
+      }
       *res_num=num1+num2;
     }
 
