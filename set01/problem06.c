@@ -12,6 +12,9 @@ int input(int *a,int *b,int *c)
 }
 void compare(int a,int b,int c,int *largest)
 {
+  if (( a>b) && (a>c))
+     
+
   *largest=max(max(a,b),c);
 }
 void output(int a,int b,int c,int largest)
