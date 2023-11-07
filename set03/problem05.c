@@ -36,10 +36,11 @@ void output(int n,int a[n])
   if(a[i]==1)
   {
     printf("%d",i);
-    if(i !=n )
-    {
-      printf(", ");
-    }
+   while(i<n)
+   {
+    printf("  ");
+    break;
+   }
   }
  }
 }

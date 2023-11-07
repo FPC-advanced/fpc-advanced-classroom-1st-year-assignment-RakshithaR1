@@ -24,13 +24,13 @@ float square_root(float n) {
  //errors in floating point arithmetic .
  //(guess*guess !=0) will not work for any other numbers other than perfect squares since the condition will never be satisfied.
   
-  int i = 1;
-  do {
+  
+  
+do {
         previous_guess = guess;
         guess = 0.5 * (guess + n / guess);
-        i++;
-    } while (guess * guess !=n && i < 21);
-
+         
+    } while (fabs(guess-previous_guess)>epsilon);
     return guess;
 }
 
