@@ -1,5 +1,6 @@
 // Program to find the weight of a camel,given height,length and stomach radius using four functions
 #include <stdio.h>
+#include<math.h>
 void input_camel_details(float *radius, float *height, float *length)
 {
   printf("Enter the radius of the stomach of the camel: ");
@@ -11,7 +12,7 @@ void input_camel_details(float *radius, float *height, float *length)
 }
 float find_weight(float radius, float height, float length)
 {
-  float we, sq;
+  float we, sq,pi=22/7;
   float guess = height * length, preguess;
   while (fabs(guess - preguess) > 0.0001)
   {
@@ -19,7 +20,7 @@ float find_weight(float radius, float height, float length)
     guess = 0.5 * (guess + (height * length) / guess);
   }
   sq = radius * radius * radius;
-  return 3.1415 * sq * guess;
+  return * sq * guess;
   
 }
 void output(float radius, float height, float length, float weight)
