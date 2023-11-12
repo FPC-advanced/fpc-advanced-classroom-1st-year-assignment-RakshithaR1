@@ -13,14 +13,14 @@ float find_weight(float radius, float height, float length)
 {
   float we, sq;
   float guess = height * length, preguess;
-  while (fabs(guess - preguess) > 0.0001)
+  while (guess - preguess) > 0.0001)
   {
     preguess = guess;
     guess = 0.5 * (guess + (height * length) / guess);
   }
   sq = radius * radius * radius;
   return (22 / 7) * sq * guess;
-  return we;
+  
 }
 void output(float radius, float height, float length, float weight)
 {
