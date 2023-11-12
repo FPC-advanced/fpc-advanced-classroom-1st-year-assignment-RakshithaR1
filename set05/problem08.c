@@ -24,24 +24,20 @@ void input(int n,Camel c[n],float *truck_weight)
 }
 void find_camel_weight(int n,Camel c[n])
 {
-   float weight,sq=(float) 1,pi=3.1415,rad=(float) 1;
   for(int i=0;i<n;i++)
   {
-    sq *= c[i].height*c[i].length;
+    const float pi=3.1415;
+    float cu=1;
+    float guess=c[i].height*c[i].length,preguess;
+    while(fabs(guess-preguess)>0.0001)
+    {
+      preguess=guess;
+      guess=0.5*(guess+(c[i].height*c[i].length)/guess);
+    }
+    cu=c[i].radius*c[i].radius*c[i].radius;
+    c[i].weight=pi*cu*guess;
   }
-  float guess=sq,preguess;
-  while(fabs(guess-preguess)>0.0001)
-  {
-    preguess=guess;
-    guess=0.5*(guess+sq/guess);
-  }
-  for(int i=0;i<n;i++)
-  {
-    rad*=c[i].radius;
-  }
-  weight=pi*rad*guess;
-  }
-
+}
 float compute_total_weight(int n,Camel c[n],float truck_weight)
 {
   float tot_cam_we=0.0;
