@@ -41,7 +41,7 @@ void find_camel_weight(int n,Camel c[n])
   }
   weight=pi*rad*guess;
   }
-}
+
 float compute_total_weight(int n,Camel c[n],float truck_weight)
 {
   float tot_cam_we=0.0;
