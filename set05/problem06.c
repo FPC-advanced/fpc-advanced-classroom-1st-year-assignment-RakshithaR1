@@ -21,7 +21,7 @@ float odd_average(int n,int a[n])
    int counts=0;
   for(int i=0;i<=n;i++)
   {
-    if(i%2!=0)
+    if(a[i]%2!=0)
     {
       sum += a[i];
       counts +=1;
