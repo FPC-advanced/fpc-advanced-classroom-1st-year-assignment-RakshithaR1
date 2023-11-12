@@ -27,7 +27,7 @@ void find_camel_weight(int n,Camel c[n])
   for(int i=0;i<n;i++)
   {
     const float pi=3.1415;
-    float cu=1;
+    float cu=0;
     float guess=c[i].height*c[i].length,preguess;
     while(fabs(guess-preguess)>0.0001)
     {
