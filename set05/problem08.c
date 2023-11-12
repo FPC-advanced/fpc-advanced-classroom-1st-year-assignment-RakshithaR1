@@ -11,7 +11,7 @@ void input(int n,Camel c[n],float *truck_weight)
   scanf("%d",&n);
   for(int i=0;i<n;i++)
   {
-    printf("Enter the height of camel no. %d:\n ",i+1);
+    printf("Enter the height of camel no. %d:\n",i+1);
     scanf("%f",&c[i].height);
     printf("Enter the length of camel no. %d:\n",i+1);
     scanf("%f",&c[i].length);
