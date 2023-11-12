@@ -1,0 +1,8 @@
+Compilation started at 11/12/2023, 7:36:48 PM
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem02.c: In function 'find_weight':
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem02.c:16:10: warning: implicit declaration of function 'fabs' [-Wimplicit-function-declaration]
+   while (fabs(guess - preguess) > 0.0001)
+          ^~~~
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem02.c:16:10: warning: incompatible implicit declaration of built-in function 'fabs'
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem02.c:16:10: note: include '<math.h>' or provide a declaration of 'fabs'
+Compilation finished at 11/12/2023, 7:36:49 PM
