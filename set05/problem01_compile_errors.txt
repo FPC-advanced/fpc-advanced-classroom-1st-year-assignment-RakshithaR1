@@ -1,0 +1,24 @@
+Compilation started at 11/12/2023, 7:18:18 PM
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c: In function 'input':
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c:11:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("Enter the x co-ordinate: ");
+   ^~~~~~
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c:11:3: warning: incompatible implicit declaration of built-in function 'printf'
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c:11:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c:12:3: warning: implicit declaration of function 'scanf' [-Wimplicit-function-declaration]
+   scanf("%f", &a.x);
+   ^~~~~
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c:12:3: warning: incompatible implicit declaration of built-in function 'scanf'
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c:12:3: note: include '<stdio.h>' or provide a declaration of 'scanf'
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c: In function 'dist':
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c:24:10: warning: implicit declaration of function 'fabs' [-Wimplicit-function-declaration]
+   while (fabs(guess - preguess) > 0.0001)
+          ^~~~
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c:24:10: warning: incompatible implicit declaration of built-in function 'fabs'
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c:24:10: note: include '<math.h>' or provide a declaration of 'fabs'
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c: In function 'output':
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c:33:3: warning: incompatible implicit declaration of built-in function 'printf'
+   printf("The Distance between (%.1f,%.1f) and (%.1f,%.1f) is %.1f", a.x, a.y, b.x, b.y, res);
+   ^~~~~~
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c:33:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+Compilation finished at 11/12/2023, 7:18:19 PM
