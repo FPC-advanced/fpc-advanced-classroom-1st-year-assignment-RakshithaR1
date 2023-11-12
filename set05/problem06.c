@@ -10,7 +10,7 @@ int input_n()
 void input(int n,int a[n])
 {
   printf("Enter the elements of the array:\n ");
-  for(int i=1;i<=n;i++)
+  for(int i=0;i<n;i++)
   {
     scanf("%d",&a[i]);
   }
@@ -19,7 +19,7 @@ float odd_average(int n,int a[n])
 {
    float sum=0.0;
    int counts=0;
-  for(int i=1;i<=n;i++)
+  for(int i=0;i<=n;i++)
   {
     if(i%2!=0)
     {
