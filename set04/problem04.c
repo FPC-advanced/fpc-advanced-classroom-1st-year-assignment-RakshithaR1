@@ -38,9 +38,10 @@ void output(int n, float a[n], float x, float result)
   printf("H(1,1,1) = ");
    for(int i=0;i<=n;i++)
   { 
-    if(i==0)
+    while(i==0)
     {
     printf("%.2f ",a[i]);
+    break;
     }
     if(i>0 && i<=n)
     {
