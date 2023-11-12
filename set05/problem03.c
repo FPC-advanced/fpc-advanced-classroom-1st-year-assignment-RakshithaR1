@@ -28,11 +28,11 @@ void find_weight(Camel *c)
     guess = 0.5 * (guess + (c->height * c->length) / guess);
   }
   sq = c->radius * c->radius * c->radius;
-  c->weight = (22.0 / 7.0) * sq * guess;
+  c->weight = 3.1415 * sq * guess;
 }
 void output(Camel c)
 {
-  printf("The weight of the camel with radius: %.1f,height: %.1f,length: %.1f is %f", c.radius, c.height, c.length, c.weight);
+  printf("The weight of the camel with radius: %.1f,height: %.1f,length: %.1f is %.4f", c.radius, c.height, c.length, c.weight);
 }
 int main()
 {

@@ -21,7 +21,7 @@ float find_weight(float radius, float height, float length)
     guess = 0.5 * (guess + (height * length) / guess);
   }
   sq = radius * radius * radius;
-  return (22.0/7.0) * sq * guess;
+  return 3.1415 * sq * guess;
 }
 void output(float radius, float height, float length, float weight)
 {
