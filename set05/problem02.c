@@ -13,7 +13,7 @@ void input_camel_details(float *radius, float *height, float *length)
 float find_weight(float radius, float height, float length)
 {
   float we, sq,rt;
-  const double pi= (22/7;
+  const double pi= (double) 22/7;
   rt=sqrt(height*length);
   sq = radius * radius * radius;
   return pi* sq * rt;
