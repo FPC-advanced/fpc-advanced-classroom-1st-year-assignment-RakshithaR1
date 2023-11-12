@@ -31,7 +31,7 @@ float odd_average(int n,int a[n])
 }
 void output(float avg)
 {
-  printf("Average of all the odd elements is: %f",avg);
+  printf("Average of all the odd elements is: %.1f",avg);
 }
 int main()
 {
