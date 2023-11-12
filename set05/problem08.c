@@ -49,7 +49,7 @@ float compute_total_weight(int n,Camel c[n],float truck_weight)
 }
 void output(float total_weight)
 {
-  printf("The total weight of the truck is: %f",total_weight);
+  printf("The total weight of the truck is: %.6f",total_weight);
 }
 int main()
 {
