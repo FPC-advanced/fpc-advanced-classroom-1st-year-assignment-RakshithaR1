@@ -17,20 +17,25 @@ void add(int num1, int den1, int num2, int den2, int *res_num, int *res_den)
     }else{
       a=den1;
       b=den2;
-      while(b!=0)
+      while(a!=b)
       {
-        temp=b;
-        b=a%b;
-        a=temp;
+        if(a>b)
+        {
+          a=a-b;
+          temp=a;
+        }else{
+          b=b-a;
+          temp=b;
+        }
       }
-      *res_den=(den1*den2)/a;
+      *res_den=(den1*den2)/temp;
       if(den1>den2)
       {
-        num2=num2*a;
-        den2=den2*a;
+        num2=num2*temp;
+        den2=den2*temp;
       }else{
-        num1=num1*a;
-        den1=den1*a;
+        num1=num1*temp;
+        den1=den1*temp;
       }
       *res_num=num1+num2;
     }
