@@ -9,18 +9,18 @@ int input()
 }
 int find_fibo(int n)
 {
-  int f0=0,f1=1,f;
-  if(n==f0)
+  int a=0,b=1,c;
+  if(n==a)
   {
-    return f0;
+    return a;
   }
   for(int i=2;i<=n;i++)
   {
-    f=f0+f1;
-    f0=f1;
-    f1=f;
+    c=a+b;
+    a=b;
+    b=c;
   }
-  return f1;
+  return b;
 }
 void output(int n,int fibo)
 {
