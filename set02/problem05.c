@@ -10,13 +10,19 @@ int input()
 int find_gcd(int a,int b)
 {
   int temp;
-  while(b!=0)
+  while(a!=b)
   {
-    temp=b;
-    b=a%b;
-    a=temp;
+    if(a>b)
+    {
+      a=a-b;
+      return a;
+    }else
+    {
+      b=b-a;
+      return b;
+    }
   }
-  return a;
+  
 }
 void output(int a,int b,int gcd)
 {
