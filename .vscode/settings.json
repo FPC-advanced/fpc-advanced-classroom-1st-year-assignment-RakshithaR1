@@ -1,4 +1,0 @@
-{
-  "clang-format.executable": "/absolute/path/to/clang-format",
-  "editor.formatOnSave": true
-}
