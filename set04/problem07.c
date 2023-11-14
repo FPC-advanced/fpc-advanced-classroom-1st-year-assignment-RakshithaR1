@@ -54,7 +54,29 @@ Fraction add_fractions(Fraction f1,Fraction f2)
 }
 void output(Fraction f1,Fraction f2,Fraction f3,Fraction sum)
 {
-  printf("")
+  if(f3.num>1)
+  {
+    for(int i=2;i<f3.num/2;i++)
+    {
+      if(f3.num%i==0)
+      {
+        f3.num=f3.num/i;
+      }
+    }
+  }
+  if(f3.den>1)
+  {
+    for(int i=2;i<f3.den/2;i++)
+    {
+      if(f3.den%i==0)
+      {
+        f3.den=f3.den/i;
+      }
+    }
+  }
+  sum.num=f3.num;
+  sum.den=f3.den;
+  printf("%d/%d + %d/%d = %d/%d",f1.num,f1.den,f2.num,f2.den,sum.num,sum.den);
 }
 int main()
 {
