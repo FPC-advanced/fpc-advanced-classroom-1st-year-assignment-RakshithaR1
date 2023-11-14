@@ -39,14 +39,7 @@ Fraction add_fractions(Fraction f1,Fraction f2)
        gcd=find_gcd(f1.den,f2.den);
        lcm=(f1.den*f2.den)/gcd;
        s.den=lcm;
-       if(f1.den<f2.den)
-       {
-        f1.num *= gcd;
-        f1.den *= gcd;
-       }else{
-        f2.den *= gcd;
-        f2.num *= gcd;
-       }
+       f1.num=f
        s.num=f1.num+f2.num;
        return s;
   }
