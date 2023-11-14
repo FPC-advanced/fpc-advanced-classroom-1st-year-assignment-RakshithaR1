@@ -49,10 +49,10 @@ void output(int n, Complex c[n], Complex result)
   for (int i = 0; i < n; i++)
   {
     printf("%.0f+%.0fi", c[i].real, c[i].imaginary);
-    while(i < n - 1)
+    if(i < n - 1)
     {
       printf(" + ");
-      break;
+      
     }
   }
   printf(" is %.0f+%.0fi", result.real, result.imaginary);
