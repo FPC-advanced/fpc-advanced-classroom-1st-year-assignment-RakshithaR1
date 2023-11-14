@@ -29,17 +29,28 @@ void add(int num1, int den1, int num2, int den2, int *res_num, int *res_den)
         }
       }
       *res_den=(den1*den2)/temp;
-      if(den1>den2)
-      {
-        num2=num2*temp;
-        den2=den2*temp;
-      }else{
-        num1=num1*temp;
-        den1=den1*temp;
-      }
+      num1=num1*den2;
+      num2=num2*den1;
       *res_num=num1+num2;
-    }
+       int resden,resnum;
+       resnum=*res_num;
+       resden=*res_den;
+       int gcd;
+      while(resnum!=resden)
+      {
+        if(resnum>resden)
+        {
+          resnum=resnum-resden;
+          gcd=resnum;
+        }else{
+          resden=resden-resnum;
+          gcd=resden;
+        }
+      }
+     
+     *res_num= *res_num/gcd;
 
+}
 }
 void output(int num1, int den1, int num2, int den2, int res_num, int res_den)
 {
