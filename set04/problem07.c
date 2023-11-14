@@ -45,6 +45,7 @@ Fraction add_fractions(Fraction f1,Fraction f2)
        resnum=s.num;
        resden=s.den;
        resgcd=find_gcd(resnum,resden);
+       
        return s;
   }
 
