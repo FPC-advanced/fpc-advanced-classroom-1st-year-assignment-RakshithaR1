@@ -67,3 +67,53 @@ A debugging session is active.
 	Inferior 1 [process 12628] will be killed.
 
 Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
++b 11
+Breakpoint 1 at 0x40144d: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c, line 11.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01/./problem10.exe 
+[New Thread 10084.0x1914]
+[New Thread 10084.0x30a8]
+
+Breakpoint 1, stringcompare (string1=0x60fe98 "hell", string2=0x60fe34 "hello")
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c:13
+13	  int j=0;
++n
+14	  for(int i=0;string1[i]==string2[i]&&string1[i]=='\0';i++)
++n
+19	  return string1[j]-string2[j];
++n
+21	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c:45
+45	  output(string1, string2, result);
++n
+46	  return 0;
++n
+47	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 10084) exited normally]
++n
+The program is not being run.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01/./problem10.exe 
+[New Thread 27196.0x9bc]
+[New Thread 27196.0x22cc]
+
+Breakpoint 1, stringcompare (string1=0x60fe98 "hello", string2=0x60fe34 "hello")
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c:13
+13	  int j=0;
++n
+14	  for(int i=0;string1[i]==string2[i]&&string1[i]=='\0';i++)
++n
+19	  return string1[j]-string2[j];
++n
+21	}
++q
+A debugging session is active.
+
+	Inferior 1 [process 27196] will be killed.
+
+Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
