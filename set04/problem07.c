@@ -42,11 +42,7 @@ Fraction add_fractions(Fraction f1,Fraction f2)
        f1.num=f1.num*f2.den;
        f2.num=f2.num*f1.den;
        s.num=f1.num+f2.num;
-       resnum=s.num;
-       resden=s.den;
-       resgcd=find_gcd(resnum,resden);
-       s.den=s.den/resgcd;
-       s.num=s.num/resgcd;
+      
        
   }
   return s;
