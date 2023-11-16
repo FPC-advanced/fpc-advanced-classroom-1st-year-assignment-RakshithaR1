@@ -1,1 +1,69 @@
 +q
++b 11
+Breakpoint 1 at 0x40144d: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c, line 11.
++b 46
+Breakpoint 2 at 0x40158d: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c, line 46.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01/./problem10.exe 
+[New Thread 12628.0x54b0]
+[New Thread 12628.0x572c]
+
+Breakpoint 2, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c:46
+46	  result = stringcompare(string1, string2);
++n
+
+Breakpoint 1, stringcompare (string1=0x60fe98 "hello", string2=0x60fe34 "hello")
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c:13
+13	  int i = 0;
++n
+14	  while (string1[i] == string2[i])
++n
+16	    if (string1[i] == '\0' || string2[i] == '\0')
++n
+20	    i++;
++n
+14	  while (string1[i] == string2[i])
++n
+16	    if (string1[i] == '\0' || string2[i] == '\0')
++n
+20	    i++;
++n
+14	  while (string1[i] == string2[i])
++n
+16	    if (string1[i] == '\0' || string2[i] == '\0')
++n
+20	    i++;
++n
+14	  while (string1[i] == string2[i])
++nn
+Undefined command: "nn".  Try "help".
++n
+16	    if (string1[i] == '\0' || string2[i] == '\0')
++n
+20	    i++;
++n
+14	  while (string1[i] == string2[i])
++n
+16	    if (string1[i] == '\0' || string2[i] == '\0')
++n
+20	    i++;
++n
+14	  while (string1[i] == string2[i])
++n
+16	    if (string1[i] == '\0' || string2[i] == '\0')
++n
+22	  return string1[i] - string2[i];
++n
+23	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c:47
+47	  output(string1, string2, result);
++n
+48	  return 0;
++n
+49	}+q
+A debugging session is active.
+
+	Inferior 1 [process 12628] will be killed.
+
+Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
