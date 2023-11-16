@@ -16,7 +16,7 @@ int stringcompare(char *string1, char *string2)
     j=i;
     break;
   }
-  return string1[i]-string2[i];
+  return string1[j]-string2[j];
   
 }
 
