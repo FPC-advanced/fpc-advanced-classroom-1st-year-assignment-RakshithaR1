@@ -14,10 +14,11 @@ int stringcompare(char *string1, char *string2)
    while(string1[i]==string2[i])
    {
      if(string1[i]=='\0'||string2[i]=='\0')
+     {
+      break;
+     }
+     i++;
    }
-  
- 
-  
   
 }
 
