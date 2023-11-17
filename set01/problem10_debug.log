@@ -117,3 +117,41 @@ A debugging session is active.
 	Inferior 1 [process 27196] will be killed.
 
 Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
++b 11
+Breakpoint 1 at 0x40144d: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c, line 11.
++b 44
+Breakpoint 2 at 0x401520: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c, line 44.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01/./problem10.exe 
+[New Thread 17168.0x4174]
+[New Thread 17168.0x1030]
+
+Breakpoint 2, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c:44
+44	  input_two_strings(string1, string2);
++n
+45	  result = stringcompare(string1, string2);
++n
+
+Breakpoint 1, stringcompare (string1=0x60fe98 "hello", string2=0x60fe34 "hell")
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c:13
+13	  int j=0;
++n
+14	  for(int i=0;string1[i]==string2[i]&&string1[i]=='\0';i++)
++n
+22	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c:46
+46	  output(string1, string2, result);
++print result
+$1 = 104
++n
+47	
++n
+48	
++n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 17168) exited normally]
++q
