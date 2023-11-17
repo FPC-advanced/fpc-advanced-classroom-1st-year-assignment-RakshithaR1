@@ -155,3 +155,37 @@ Single stepping until exit from function __mingw_CRTStartup,
 which has no line number information.
 [Inferior 1 (process 17168) exited normally]
 +q
++b 11
+Breakpoint 1 at 0x40144d: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c, line 11.
++b 14
+Breakpoint 2 at 0x401454: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c, line 14.
++b 42
+Breakpoint 3 at 0x401516: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c, line 42.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01/./problem10.exe 
+[New Thread 3884.0x4e9c]
+[New Thread 3884.0x30f4]
+
+Breakpoint 3, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c:42
+42	  result = stringcompare(string1, string2);
++n
+
+Breakpoint 1, stringcompare (string1=0x60fe98 "hell", string2=0x60fe34 "hello")
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c:13
+13	  int j=0;
++n
+
+Breakpoint 2, stringcompare (string1=0x60fe98 "hell", string2=0x60fe34 "hello")
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c:14
+14	  for(int i=0;string1[i]==string2[i]&&string1[i]=='\0';i++);
++n
+19	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c:43
+43	  output(string1, string2, result);
++q
+A debugging session is active.
+
+	Inferior 1 [process 3884] will be killed.
+
+Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5

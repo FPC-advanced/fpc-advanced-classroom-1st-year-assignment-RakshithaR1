@@ -10,7 +10,8 @@ void input_two_strings(char *string1, char *string2)
 
 int stringcompare(char *string1, char *string2)
 {
-  
+   int i=0;
+   while()
   
  
   
