@@ -48,8 +48,12 @@ void output(int n, Complex c[n], Complex result)
   printf("The sum of the %d complex numbers is ", n);
   for (int i = 0; i < n; i++)
   {
-    printf(" %.0f+%.0fi +", c[i].real, c[i].imaginary);
-   
+    printf(" %.0f+%.0fi ", c[i].real, c[i].imaginary);
+    if(i < n - 1)
+    {
+      printf(" + ");
+      
+    }
   }
   printf(" is %.0f+%.0fi", result.real, result.imaginary);
 }
