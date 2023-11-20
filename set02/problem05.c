@@ -12,15 +12,7 @@ int find_gcd(int a,int b)
   
   while(a!=b)
   {
-    if(a>b)
-    {
-      a=a-b;
-      return a;
-    }else
-    {
-      b=b-a;
-      return b;
-    }
+     
   }
   
 }

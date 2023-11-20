@@ -14,3 +14,28 @@ Breakpoint 2, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanc
 Breakpoint 1, find_gcd (a=7, b=11)
     at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem05.c:13
 13	  while(a!=b)
++n
+15	    if(a>b)
++n
+21	      b=b-a;
++n
+22	      return b;
++n
+26	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem05.c:37
+37	  output(x,y,gcd);
++n
+38	  return 0;
++print gcd
+$1 = 4
++n
+39	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 16780) exited normally]
++n
+The program is not being run.
++q
