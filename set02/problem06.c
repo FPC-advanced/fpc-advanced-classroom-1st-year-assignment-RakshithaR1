@@ -8,10 +8,7 @@ void input_string(char *a)
 void str_reverse(char *str,char *rev_str)
 {  
   int n=0;
-  while(str[n]!='\0')
-  {
-     n++;
-  }
+  for(n=0;str[i]!='\0';i++);
   for(int i=0;i<n;i++)
   {
     rev_str[i]=str[n-i-1];
