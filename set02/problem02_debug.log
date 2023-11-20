@@ -33,3 +33,50 @@ Single stepping until exit from function __mingw_CRTStartup,
 which has no line number information.
 [Inferior 1 (process 26504) exited normally]
 +q
++b 10
+Breakpoint 1 at 0x40142d: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem02.c, line 10.
++b 22
+Breakpoint 2 at 0x40145b: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem02.c, line 22.
++b 38
+Breakpoint 3 at 0x4014d1: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem02.c, line 38.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02/./problem02.exe 
+[New Thread 18168.0x3768]
+[New Thread 18168.0xd3c]
+
+Breakpoint 3, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem02.c:38
+38	  isscalene=check_scalene(x,y,z);
++n
+
+Breakpoint 1, check_scalene (a=1, b=1, c=3)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem02.c:12
+12	  if(a!=b&&a!=c)
++n
+18	    return 0;
++n
+21	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem02.c:39
+39	  output(x,y,z,isscalene);
++n
+
+Breakpoint 2, output (a=1, b=1, c=3, isscalene=0)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem02.c:24
+24	  if(isscalene!=0)
++n
+29	    printf("The triangle with sides %d,%d and %d is not scalene. ",a,b,c);
++print isscalene
+$1 = 0
++n
+31	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem02.c:40
+40	  return 0;
++n
+41	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 18168) exited normally]
++q
