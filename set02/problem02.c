@@ -9,11 +9,9 @@ int input_side()
 }
 int check_scalene(int a,int b,int c)
 {
-  if(a!=b&&a!=c)
+  if(a!=b&&a!=c&&b!=c)
   {
-    if(b!=c){
-      return 1;
-    }
+    return 1;
   }else{
     return 0;
   }
