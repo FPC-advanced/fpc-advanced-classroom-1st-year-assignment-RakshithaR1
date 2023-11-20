@@ -86,3 +86,70 @@ which has no line number information.
 The program is not being run.
 +q
 +q
++b 8
+Breakpoint 1 at 0x40142e: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem06.c, line 8.
++b 27
+Breakpoint 2 at 0x4014db: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem06.c, line 27.
++n
+The program is not being run.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02/./problem06.exe 
+[New Thread 16148.0x2780]
+[New Thread 16148.0x5184]
+
+Breakpoint 2, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem06.c:27
+27	  str_reverse(s,rev);
++n
+
+Breakpoint 1, str_reverse (str=0x60fe9c "hello", rev_str=0x60fe38 "\210þ`")
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem06.c:10
+10	  int n=0;
++n
+11	  for(n=0;str[n]!='\0';n++);
++n
+12	  for(int i=0;i<n;i++)
++n
+14	    rev_str[i]=str[n-i-1];
++print n
+$1 = 5
++n
+12	  for(int i=0;i<n;i++)
++n
+14	    rev_str[i]=str[n-i-1];
++n
+12	  for(int i=0;i<n;i++)
++n
+14	    rev_str[i]=str[n-i-1];
++n
+12	  for(int i=0;i<n;i++)
++n
+14	    rev_str[i]=str[n-i-1];
++n
+12	  for(int i=0;i<n;i++)
++n
+14	    rev_str[i]=str[n-i-1];
++n
+12	  for(int i=0;i<n;i++)
++n
+16	  rev_str[n]='\0';
++n
+17	}
++print rev
+No symbol "rev" in current context.
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem06.c:28
+28	  output(s,rev);
++print rev
+$2 = "olleh\000Qv\000\000\036\000\000\000\000\000\030&\036\000s‰\033A\b\000\000\000\030&\036\000 &\036\000\200\022@\000Ð\023@\000\001\000\000\000?‚Rv\200\000\000\000Lþ`\000$&\036\000„þ`\000\200\022@\000\020\025@\000\000\000\000\000?‚Rv$&\036\000œþ`\000u‡Sv\034“Xv"
++print s
+$3 = "hello\000Sv\b\000\000\000}\201Rvc\201Rv'‰\033A\200\022@\000\200\022@\000\000\000\000\000\020\025@\000°þ`\000èþ`\000Ìÿ`\000páRvƒ¨,7þÿÿÿèþ`\000m‚Rv\020\025@\000„ÿ`\000n\025@\000\020\025@\000\000 /\000ƒ\000\000\000\b\000\000"
++n
+29	  return 0;
++n
+30	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 16148) exited normally]
++q
