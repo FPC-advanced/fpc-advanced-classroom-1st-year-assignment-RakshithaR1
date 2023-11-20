@@ -1,0 +1,35 @@
++b 10
+Breakpoint 1 at 0x40144d: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem01.c, line 10.
++b 22
+Breakpoint 2 at 0x4014b9: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem01.c, line 22.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02/./problem01.exe 
+[New Thread 12608.0x3684]
+[New Thread 12608.0x62ac]
+
+Breakpoint 2, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem01.c:22
+22	  find_area(x,y,&area);
++n
+
+Breakpoint 1, find_area (base=1, height=1, area=0x60fef4)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem01.c:12
+12	  *area=0.5*base*height;
++n
+13	}
++print area
+$1 = (float *) 0x60fef4
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem01.c:23
+23	  output(x,y,area);
++print area
+$2 = 0.5
++n
+24	  return 0;
++n
+25	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 12608) exited normally]
++q
