@@ -1,0 +1,144 @@
++b 10
+Breakpoint 1 at 0x401430: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem03.c, line 10.
++b 40
+Breakpoint 2 at 0x4014bd: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem03.c, line 40.
++b 27
+Breakpoint 3 at 0x401475: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem03.c, line 27.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02/./problem03.exe 
+[New Thread 15000.0x407c]
+[New Thread 15000.0x3830]
+
+Breakpoint 2, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem03.c:40
+40	  result=is_composite(n);
++n
+
+Breakpoint 1, is_composite (n=5)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem03.c:12
+12	  if(n>1)
++n
+14	    for(int i=2;i<=n/2;i++)
++n
+16	      if(n%i==0)
++n
+14	    for(int i=2;i<=n/2;i++)
++n
+23	 return 0;
++n
+24	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem03.c:41
+41	  output(n,result);
++p result
+$1 = 0
++n
+
+Breakpoint 3, output (n=5, result=0)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem03.c:29
+29	  if(result==1)
++n
+33	    printf("%d is not a composite number",n);
++n
+35	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem03.c:42
+42	  return 0;
++n
+43	}
++n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 15000) exited normally]
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02/./problem03.exe 
+[New Thread 8048.0x33d8]
+[New Thread 8048.0x31c4]
+
+Breakpoint 2, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem03.c:40
+40	  result=is_composite(n);
++n
+
+Breakpoint 1, is_composite (n=6)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem03.c:12
+12	  if(n>1)
++n
+14	    for(int i=2;i<=n/2;i++)
++n
+16	      if(n%i==0)
++n
+18	        return 1;
++n
+24	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem03.c:41
+41	  output(n,result);
++n
+
+Breakpoint 3, output (n=6, result=1)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem03.c:29
+29	  if(result==1)
++n
+31	    printf("%d is a composite number",n);
++n
+35	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem03.c:42
+42	  return 0;
++n
+43	}
++n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 8048) exited normally]
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02/./problem03.exe 
+[New Thread 17112.0x584]
+[New Thread 17112.0x1fcc]
+
+Breakpoint 2, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem03.c:40
+40	  result=is_composite(n);
++n
+
+Breakpoint 1, is_composite (n=27)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem03.c:12
+12	  if(n>1)
++n
+14	    for(int i=2;i<=n/2;i++)
++n
+16	      if(n%i==0)
++n
+14	    for(int i=2;i<=n/2;i++)
++n
+16	      if(n%i==0)
++n
+18	        return 1;
++n
+24	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem03.c:41
+41	  output(n,result);
++n
+
+Breakpoint 3, output (n=27, result=1)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem03.c:29
+29	  if(result==1)
++n
+31	    printf("%d is a composite number",n);
++n
+35	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem03.c:42
+42	  return 0;
++n
+43	}
++n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 17112) exited normally]
++q
