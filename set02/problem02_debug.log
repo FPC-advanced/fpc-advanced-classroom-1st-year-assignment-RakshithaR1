@@ -9,3 +9,10 @@ Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-clas
 
 Breakpoint 2, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem02.c:38
 38	  isscalene=check_scalene(x,y,z);
++n
+
+Breakpoint 1, check_scalene (a=1, b=2, c=3)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem02.c:12
+12	  if(a!=b&&a!=c)
++n
+14	    if(b!=c){
