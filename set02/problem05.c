@@ -16,8 +16,9 @@ int find_gcd(int a,int b)
     {
       temp=b;
       b=a%b;
-      
+      a=b;
     }
+    return a;
   }
   
 }
