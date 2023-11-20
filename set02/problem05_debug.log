@@ -2,3 +2,15 @@
 Breakpoint 1 at 0x40142d: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem05.c, line 10.
 +b 36
 Breakpoint 2 at 0x40149f: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem05.c, line 36.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02/./problem05.exe 
+[New Thread 16780.0x4da8]
+[New Thread 16780.0x445c]
+
+Breakpoint 2, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem05.c:36
+36	  gcd=find_gcd(x,y);
++n
+
+Breakpoint 1, find_gcd (a=7, b=11)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem05.c:13
+13	  while(a!=b)
