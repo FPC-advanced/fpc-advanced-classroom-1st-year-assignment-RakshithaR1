@@ -3,3 +3,85 @@ No line 8 in the current file.
 Make breakpoint pending on future shared library load? (y or [n]) Please answer y or [n].
 Make breakpoint pending on future shared library load? (y or [n]) Please answer y or [n].
 Make breakpoint pending on future shared library load? (y or [n]) +q
++b 8
+Breakpoint 1 at 0x40142e: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem06.c, line 8.
++b 30
+Breakpoint 2 at 0x4014d4: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem06.c, line 30.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02/./problem06.exe 
+[New Thread 12892.0x53c]
+[New Thread 12892.0x38b0]
+
+Breakpoint 2, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem06.c:30
+warning: Source file is more recent than executable.
+30	  str_reverse(s,rev);
++n
+
+Breakpoint 1, str_reverse (str=0x60fe9c "hello", rev_str=0x60fe38 "\210þ`")
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem06.c:10
+10	  int n=0;
++n
+11	  while(str[n]!='\0')
++n
+13	     n++;
++n
+11	  while(str[n]!='\0')
++n
+13	     n++;
++n
+11	  while(str[n]!='\0')
++n
+13	     n++;
++n
+11	  while(str[n]!='\0')
++n
+13	     n++;
++n
+11	  while(str[n]!='\0')
++n
+13	     n++;
++n
+11	  while(str[n]!='\0')
++n
+15	  for(int i=0;i<n;i++)
++n
+17	    rev_str[i]=str[n-i-1];
++n
+15	  for(int i=0;i<n;i++)
++n
+17	    rev_str[i]=str[n-i-1];
++n
+15	  for(int i=0;i<n;i++)
++n
+17	    rev_str[i]=str[n-i-1];
++n
+15	  for(int i=0;i<n;i++)
++n
+17	    rev_str[i]=str[n-i-1];
++n
+15	  for(int i=0;i<n;i++)
++n
+17	    rev_str[i]=str[n-i-1];
++n
+15	  for(int i=0;i<n;i++)
++n
+19	  rev_str[n]='\0';
++n
+20	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem06.c:31
+31	  output(s,rev);
++n
+32	  return 0;
++n
+33	}+print rev
+$1 = "olleh\000Qv\000\000Æ\000\000\000\000\000\030&Æ\000\235Šìð\b\000\000\000\030&Æ\000 &Æ\000\200\022@\000Ð\023@\000\001\000\000\000?‚Rv\200\000\000\000Lþ`\000$&Æ\000„þ`\000\200\022@\000\020\025@\000\000\000\000\000?‚Rv$&Æ\000œþ`\000u‡Sv\034“Xv"
++n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 12892) exited normally]
++n
+The program is not being run.
++q
