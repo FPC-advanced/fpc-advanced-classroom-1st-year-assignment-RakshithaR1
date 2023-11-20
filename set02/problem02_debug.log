@@ -16,3 +16,20 @@ Breakpoint 1, check_scalene (a=1, b=2, c=3)
 12	  if(a!=b&&a!=c)
 +n
 14	    if(b!=c){
++n
+15	      return 1;
++n
+21	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem02.c:39
+39	  output(x,y,z,isscalene);
++n
+40	  return 0;
++n
+41	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 26504) exited normally]
++q
