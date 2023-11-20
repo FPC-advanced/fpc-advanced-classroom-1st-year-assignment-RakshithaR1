@@ -80,3 +80,38 @@ Single stepping until exit from function __mingw_CRTStartup,
 which has no line number information.
 [Inferior 1 (process 18168) exited normally]
 +q
++b 10
+Breakpoint 1 at 0x40142d: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem02.c, line 10.
++b 36
+Breakpoint 2 at 0x4014cf: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem02.c, line 36.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02/./problem02.exe 
+[New Thread 10224.0x259c]
+[New Thread 10224.0x1778]
+
+Breakpoint 2, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem02.c:36
+36	  isscalene=check_scalene(x,y,z);
++n
+
+Breakpoint 1, check_scalene (a=1, b=2, c=1)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem02.c:12
+12	  if(a!=b&&a!=c&&b!=c)
++n
+16	    return 0;
++n
+19	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem02.c:37
+37	  output(x,y,z,isscalene);
++p isscalene
+$1 = 0
++n
+38	  return 0;
++n
+39	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 10224) exited normally]
++q
