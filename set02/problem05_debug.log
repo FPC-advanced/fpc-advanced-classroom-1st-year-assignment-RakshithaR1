@@ -39,3 +39,79 @@ which has no line number information.
 +n
 The program is not being run.
 +q
++b 10
+Breakpoint 1 at 0x401430: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem05.c, line 10.
++b 34
+Breakpoint 2 at 0x4014a7: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem05.c, line 34.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02/./problem05.exe 
+[New Thread 7128.0x3924]
+[New Thread 7128.0x35b8]
+
+Breakpoint 2, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem05.c:34
+34	  gcd=find_gcd(x,y);
++n
+
+Breakpoint 1, find_gcd (a=7, b=11)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem05.c:13
+13	  while(a!=b)
++n
+15	    while(b!=0)
++n
+17	      temp=b;
++n
+18	      b=a%b;
++n
+19	  }
++n
+15	    {
++n
+17	    b=a%b;
++n
+18	   a=temp;
++n
+19	  }
++n
+15	    {
++n
+17	    b=a%b;
++n
+18	   a=temp;
++n
+19	  }
++n
+15	    {
++n
+17	    b=a%b;
++n
+18	   a=temp;
++n
+19	  }
++n
+15	    {
++n
+17	    b=a%b;
++n
+18	   a=temp;
++n
+19	  }
++n
+15	    {
++n
+21	
++n
+24	 a,int b,int gcd)
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem05.c:35
+35	
++print gcd
+$1 = 1
++n
++n
++n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 7128) exited normally]
++q

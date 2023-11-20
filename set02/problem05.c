@@ -10,8 +10,7 @@ int input()
 int find_gcd(int a,int b)
 {
   int temp;
-  while(a!=b)
-  {
+ 
     while(b!=0)
     {
       temp=b;
@@ -19,7 +18,7 @@ int find_gcd(int a,int b)
       a=temp;
     }
     return a;
-  }
+  
   
 }
 void output(int a,int b,int gcd)
