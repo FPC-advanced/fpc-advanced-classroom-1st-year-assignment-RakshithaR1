@@ -2,3 +2,10 @@
 Breakpoint 1 at 0x40142d: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem02.c, line 10.
 +b 38
 Breakpoint 2 at 0x4014d1: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem02.c, line 38.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02/./problem02.exe 
+[New Thread 26504.0x38f0]
+[New Thread 26504.0x5058]
+
+Breakpoint 2, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set02\problem02.c:38
+38	  isscalene=check_scalene(x,y,z);
