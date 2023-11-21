@@ -35,7 +35,7 @@ void output(int n, int a[n])
     if (a[i] == 1)
     {
       printf("%d", i);
-      while (i < n)
+      while (i < n-2)
       {
         printf(", ");
         break;
