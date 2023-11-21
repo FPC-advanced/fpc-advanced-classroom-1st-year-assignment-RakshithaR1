@@ -35,7 +35,7 @@ void output(int n, int a[n])
     if (a[i] == 1)
     {
       printf("%d", i);
-      if(i < =n-1)
+      if(i <=n-3)
       {
         printf(", ");
         
