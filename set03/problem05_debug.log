@@ -1,0 +1,6 @@
++b 10
+Breakpoint 1 at 0x401430: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem05.c, line 10.
++b 17
+Breakpoint 2 at 0x401463: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem05.c, line 17.
++b 30
+Breakpoint 3 at 0x4014ca: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem05.c, line 30.
