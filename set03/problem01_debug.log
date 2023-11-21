@@ -2,3 +2,82 @@
 Breakpoint 1 at 0x40145b: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem01.c, line 11.
 +b 34
 Breakpoint 2 at 0x40152a: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem01.c, line 34.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03/./problem01.exe 
+[New Thread 11316.0x2604]
+[New Thread 11316.0x5894]
+
+Breakpoint 2, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem01.c:34
+34	  dis_point = find_distance(x1, y1, x2, y2);
++n
+
+Breakpoint 1, find_distance (x1=1, y1=1, x2=2, y2=2)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem01.c:13
+13	  float dx = x2 - x1;
++n
+14	  float dy = y2 - y1;
++n
+15	  float sqr_dist = (dx * dx) + (dy * dy);
++print dx
+$1 = 1
++print dy
+$2 = 1
++n
+16	  float guess = sqr_dist;
++print sqr_dist
+$3 = 2
++n
+19	  while (fabs(guess - pre_guess) > 0.0001)
++n
+21	    pre_guess = guess;
++n
+22	    guess = 0.5 * (guess + sqr_dist / guess);
++n
+19	  while (fabs(guess - pre_guess) > 0.0001)
++n
+21	    pre_guess = guess;
++n
+22	    guess = 0.5 * (guess + sqr_dist / guess);
++print guess
+$4 = 1.5
++n
+19	  while (fabs(guess - pre_guess) > 0.0001)
++n
+21	    pre_guess = guess;
++n
+22	    guess = 0.5 * (guess + sqr_dist / guess);
++n
+19	  while (fabs(guess - pre_guess) > 0.0001)
++print guess
+$5 = 1.41421568
++n
+21	    pre_guess = guess;
++n
+22	    guess = 0.5 * (guess + sqr_dist / guess);
++n
+19	  while (fabs(guess - pre_guess) > 0.0001)
++n
+24	  return guess;
++print guess
+$6 = 1.41421354
++print guess
+$7 = 1.41421354
++n
+25	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem01.c:35
+35	  output(x1, y1, x2, y2, dis_point);
++print dist_point
+No symbol "dist_point" in current context.
++print dis_point
+$8 = 1.41421354
++n
+36	  return 0;
++n
+37	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 11316) exited normally]
++q
