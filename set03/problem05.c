@@ -35,10 +35,10 @@ void output(int n, int a[n])
     if (a[i] == 1)
     {
       printf("%d", i);
-      while (i < n-2)
+      if(i < =n-1)
       {
         printf(", ");
-        break;
+        
       }
     }
   }
