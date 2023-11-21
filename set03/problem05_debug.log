@@ -162,3 +162,394 @@ Breakpoint 2, erotosthenes_sieve (n=35, a=0x60fd6c)
 19	  for (int i = 2; i * i <= n; i++)
 +n
 21	    if (a[i] == 1)
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+19	  for (int i = 2; i * i <= n; i++)
++n
+21	    if (a[i] == 1)
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++nn
+Undefined command: "nn".  Try "help".
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+19	  for (int i = 2; i * i <= n; i++)
++n
+21	    if (a[i] == 1)
++n
+19	  for (int i = 2; i * i <= n; i++)
++n
+21	    if (a[i] == 1)
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+25	        a[j] = 0;
++n
+23	      for (int j = i * i; j <= n; j += i)
++n
+19	  for (int i = 2; i * i <= n; i++)
++n
+29	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem05.c:52
+52	  output(n, a);
++n
+
+Breakpoint 3, output (n=35, a=0x60fd6c)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem05.c:32
+32	  printf("The prime numbers between 2 to %d is ", n);
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+37	      printf("%d", i);
++n
+38	      if(i <=n-2)
++n
+40	        printf(", ");
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+37	      printf("%d", i);
++n
+38	      if(i <=n-2)
++n
+40	        printf(", ");
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+37	      printf("%d", i);
++n
+38	      if(i <=n-2)
++n
+40	        printf(", ");
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+37	      printf("%d", i);
++n
+38	      if(i <=n-2)
++n
+40	        printf(", ");
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+37	      printf("%d", i);
++n
+38	      if(i <=n-2)
++n
+40	        printf(", ");
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+37	      printf("%d", i);
++n
+38	      if(i <=n-2)
++n
+40	        printf(", ");
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++print n-2
+$1 = 33
++print i
+$2 = 14
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+33	  for (int i = 2; i <= n; i++)
++print n-1git add .
+Invalid number "1git".
++git commit -m "committed 11/21/2023, 6:03:10 PM"
+Undefined command: "git".  Try "help".
++git push
+Undefined command: "git".  Try "help".
++n
+35	    if (a[i] == 1)
++n
+37	      printf("%d", i);
++n
+38	      if(i <=n-2)
++n
+40	        printf(", ");
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+37	      printf("%d", i);
++n
+38	      if(i <=n-2)
++n
+40	        printf(", ");
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+37	      printf("%d", i);
++n
+38	      if(i <=n-2)
++n
+40	        printf(", ");
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++print i
+$3 = 25
++print i
+$4 = 25
++print i
+$5 = 25
++print i
+$6 = 25
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+37	      printf("%d", i);
++print i
+$7 = 29
++print i
+$8 = 29
++print i
+$9 = 29
++print i
+$10 = 29
++n
+38	      if(i <=n-2)
++n
+40	        printf(", ");
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+37	      printf("%d", i);
++n
+38	      if(i <=n-2)
++n
+40	        printf(", ");
++n
+33	  for (int i = 2; i <= n; i++)
++print i
+$11 = 31
++n
+35	    if (a[i] == 1)
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+33	  for (int i = 2; i <= n; i++)
++n
+35	    if (a[i] == 1)
++n
+33	  for (int i = 2; i <= n; i++)
++print i
+$12 = 34
++n
+35	    if (a[i] == 1)
++n
+33	  for (int i = 2; i <= n; i++)
++n
+45	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem05.c:53
+53	  return 0;
++n
+54	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 23540) exited normally]
++q

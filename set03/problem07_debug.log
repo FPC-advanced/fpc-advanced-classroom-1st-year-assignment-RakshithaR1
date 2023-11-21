@@ -1,0 +1,91 @@
++b 22
+Breakpoint 1 at 0x40143d: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem07.c, line 22.
++b 32
+Breakpoint 2 at 0x40149b: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem07.c, line 32.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03/./problem07.exe 
+[New Thread 18744.0x7c8]
+[New Thread 18744.0x6070]
+
+Breakpoint 1, input_line ()
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem07.c:25
+25	  printf("Enter the co-ordinates of the 1st point:\n ");
++n
+26	  l1.p1 = input_point();
++n
+27	  printf("Enter the co-ordinates of the 2nd point:\n ");
++n
+28	  l1.p2 = input_point();
++n
+29	  l1.distance = 0;
++n
+30	  return l1;
++n
+31	}
++print L
+No symbol "L" in current context.
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem07.c:56
+56	  find_length(&L);
++print L
+$1 = {p1 = {x = 1, y = 1}, p2 = {x = 2, y = 2}, distance = 0}
++n
+
+Breakpoint 2, find_length (l=0x60feec)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem07.c:35
+35	  dx = l->p2.x - l->p1.x;
++n
+36	  dy = l->p2.y - l->p1.y;
++n
+37	  float area = (dx * dx) + (dy * dy);
++n
+38	  float guess = area;
++n
+41	  while (fabs(guess - prev_guess) > 0.0001)
++n
+43	    prev_guess = guess;
++n
+44	    guess = 0.5 * (guess + area / guess);
++n
+41	  while (fabs(guess - prev_guess) > 0.0001)
++n
+43	    prev_guess = guess;
++print guess
+$2 = 1.5
++n
+44	    guess = 0.5 * (guess + area / guess);
++n
+41	  while (fabs(guess - prev_guess) > 0.0001)
++n
+43	    prev_guess = guess;
++n
+44	    guess = 0.5 * (guess + area / guess);
++print guess
+$3 = 1.41666663
++n
+41	  while (fabs(guess - prev_guess) > 0.0001)
++n
+43	    prev_guess = guess;
++print guess
+$4 = 1.41421568
++n
+44	    guess = 0.5 * (guess + area / guess);
++n
+41	  while (fabs(guess - prev_guess) > 0.0001)
++n
+46	  l->distance = guess;
++n
+47	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem07.c:57
+57	  output(L);
++n
+58	  return 0;
++n
+59	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 18744) exited normally]
++q

@@ -1,0 +1,63 @@
++b 10
+Breakpoint 1 at 0x40144d: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem06.c, line 10.
++b 31
+Breakpoint 2 at 0x4014d4: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem06.c, line 31.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03/./problem06.exe 
+[New Thread 22772.0x5230]
+[New Thread 22772.0x5cd8]
+
+Breakpoint 2, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem06.c:31
+31	  n = sub_str_index(a, b);
++n
+
+Breakpoint 1, sub_str_index (string=0x60fe98 "helloworldhello", substring=0x60fe34 "world")
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem06.c:13
+13	  for (int j = 0; string[j] != '\0'; j++)
++n
+16	    if (string[j] == substring[0])
++n
+13	  for (int j = 0; string[j] != '\0'; j++)
++n
+16	    if (string[j] == substring[0])
++print string
+$1 = 0x60fe98 "helloworldhello"
++p string[j]
+$2 = 101 'e'
++n
+13	  for (int j = 0; string[j] != '\0'; j++)
++n
+16	    if (string[j] == substring[0])
++n
+13	  for (int j = 0; string[j] != '\0'; j++)
++n
+16	    if (string[j] == substring[0])
++n
+13	  for (int j = 0; string[j] != '\0'; j++)
++n
+16	    if (string[j] == substring[0])
++n
+13	  for (int j = 0; string[j] != '\0'; j++)
++n
+16	    if (string[j] == substring[0])
++n
+18	      return j;
++n
+21	}
++print j
+No symbol "j" in current context.
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem06.c:32
+32	  output(a, b, n);
++print n
+$3 = 5
++n
+33	  return 0;
++n
+34	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 22772) exited normally]
++q
