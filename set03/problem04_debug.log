@@ -1,0 +1,197 @@
++b 10
+Breakpoint 1 at 0x401430: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem04.c, line 10.
++b 33
+Breakpoint 2 at 0x4014b6: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem04.c, line 33.
++n
+The program is not being run.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03/./problem04.exe 
+[New Thread 24436.0x3024]
+[New Thread 24436.0x242c]
+
+Breakpoint 2, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem04.c:33
+33	  fibo = find_fibo(n);
++print n
+$1 = 5
++n
+
+Breakpoint 1, find_fibo (n=5)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem04.c:12
+12	  int a = 0, b = 1, c;
++n
+13	  if (n == a)
++n
+17	  for (int i = 2; i <= n; i++)
++n
+19	    c = a + b;
++n
+20	    a = b;
++n
+21	    b = c;
++n
+17	  for (int i = 2; i <= n; i++)
++print a
+$2 = 1
++print b
+$3 = 1
++n
+19	    c = a + b;
++n
+20	    a = b;
++n
+21	    b = c;
++n
+17	  for (int i = 2; i <= n; i++)
++print a
+$4 = 1
++print b
+$5 = 2
++n
+19	    c = a + b;
++n
+20	    a = b;
++n
+21	    b = c;
++n
+17	  for (int i = 2; i <= n; i++)
++print a
+$6 = 2
++print b
+$7 = 3
++n
+19	    c = a + b;
++n
+20	    a = b;
++n
+21	    b = c;
++n
+17	  for (int i = 2; i <= n; i++)
++print a
+$8 = 3
++print b
+$9 = 5
++n
+23	  return b;
++n
+24	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem04.c:34
+34	  output(n, fibo);
++n
+35	  return 0;
++n
+36	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 24436) exited normally]
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03/./problem04.exe 
+[New Thread 23176.0x67fc]
+[New Thread 23176.0x4aa4]
+
+Breakpoint 2, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem04.c:33
+33	  fibo = find_fibo(n);
++n
+
+Breakpoint 1, find_fibo (n=8)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem04.c:12
+12	  int a = 0, b = 1, c;
++n
+13	  if (n == a)
++n
+17	  for (int i = 2; i <= n; i++)
++n
+19	    c = a + b;
++n
+20	    a = b;
++n
+21	    b = c;
++n
+17	  for (int i = 2; i <= n; i++)
++print a 
+$10 = 1
++print b
+$11 = 1
++n
+19	    c = a + b;
++n
+20	    a = b;
++n
+21	    b = c;
++n
+17	  for (int i = 2; i <= n; i++)
++n
+19	    c = a + b;
++n
+20	    a = b;
++n
+21	    b = c;
++n
+17	  for (int i = 2; i <= n; i++)
++print a
+$12 = 2
++print b
+$13 = 3
++n
+19	    c = a + b;
++n
+20	    a = b;
++n
+21	    b = c;
++n
+17	  for (int i = 2; i <= n; i++)
++print a
+$14 = 3
++print b
+$15 = 5
++n
+19	    c = a + b;
++n
+20	    a = b;
++n
+21	    b = c;
++n
+17	  for (int i = 2; i <= n; i++)
++print a
+$16 = 5
++print b
+$17 = 8
++n
+19	    c = a + b;
++n
+20	    a = b;
++n
+21	    b = c;
++n
+17	  for (int i = 2; i <= n; i++)
++print a
+$18 = 8
++print b
+$19 = 13
++n
+19	    c = a + b;
++n
+20	    a = b;
++n
+21	    b = c;
++n
+17	  for (int i = 2; i <= n; i++)
++n
+23	  return b;
++n
+24	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem04.c:34
+34	  output(n, fibo);
++n
+35	  return 0;
++n
+36	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 23176) exited normally]
++q
