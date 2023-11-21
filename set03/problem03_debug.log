@@ -27,3 +27,67 @@ main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1
 42	  output(n, prime);
 +print prime
 $1 = 1
++n
+
+Breakpoint 2, output (n=2, result=1)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem03.c:28
+28	  if (result != 0)
++n
+30	    printf("%d is a prime number", n);
++n
+36	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem03.c:43
+43	  return 0;
++n
+44	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 18468) exited normally]
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03/./problem03.exe 
+[New Thread 17416.0x5c48]
+[New Thread 17416.0xa5c]
+
+Breakpoint 3, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem03.c:41
+41	  prime = is_prime(n);
++n
+
+Breakpoint 1, is_prime (n=8)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem03.c:12
+12	  if (n <= 1)
++n
+16	  for (int i = 2; i < n; i++)
++n
+18	    if (n % i == 0)
++n
+20	      return 0;
++n
+24	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem03.c:42
+42	  output(n, prime);
++print prime
+$2 = 0
++n
+
+Breakpoint 2, output (n=8, result=0)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem03.c:28
+28	  if (result != 0)
++n
+34	    printf("%d is not a prime number", n);
++n
+36	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem03.c:43
+43	  return 0;
++n
+44	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 17416) exited normally]
++q
