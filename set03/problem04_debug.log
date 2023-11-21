@@ -195,3 +195,99 @@ Single stepping until exit from function __mingw_CRTStartup,
 which has no line number information.
 [Inferior 1 (process 23176) exited normally]
 +q
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03/./problem04.exe 
+[New Thread 17620.0x67d8]
+[New Thread 17620.0x3834]
+[Inferior 1 (process 17620) exited normally]
++b 10
+Breakpoint 1 at 0x401430: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem04.c, line 10.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03/./problem04.exe 
+[New Thread 19228.0x5f24]
+[New Thread 19228.0x114c]
+
+Breakpoint 1, find_fibo (n=6)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem04.c:12
+12	  int a = 0, b = 1, c;
++n
+13	  if (n == a)
++n
+17	  for (int i = 2; i <= n; i++)
++n
+19	    c = a + b;
++n
+20	    a = b;
++n
+21	    b = c;
++n
+17	  for (int i = 2; i <= n; i++)
++print a
+$1 = 1
++print b
+$2 = 1
++n
+19	    c = a + b;
++n
+20	    a = b;
++n
+21	    b = c;
++n
+17	  for (int i = 2; i <= n; i++)
++n
+19	    c = a + b;
++nn
+Undefined command: "nn".  Try "help".
++n
+20	    a = b;
++n
+21	    b = c;
++n
+17	  for (int i = 2; i <= n; i++)
++print aa
+No symbol "aa" in current context.
++print a
+$3 = 2
++print b
+$4 = 3
++n
+19	    c = a + b;
++n
+20	    a = b;
++n
+21	    b = c;
++n
+17	  for (int i = 2; i <= n; i++)
++print a
+$5 = 3
++p b
+$6 = 5
++n
+19	    c = a + b;
++n
+20	    a = b;
++n
+21	    b = c;
++n
+17	  for (int i = 2; i <= n; i++)
++print a
+$7 = 5
++print b
+$8 = 8
++n
+23	  return b;
++n
+24	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem04.c:34
+34	  output(n, fibo);
++n
+35	  return 0;
++n
+36	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 19228) exited normally]
++q
