@@ -20,3 +20,10 @@ Breakpoint 1, is_prime (n=2)
 16	  for (int i = 2; i < n; i++)
 +n
 23	  return 1;
++n
+24	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem03.c:42
+42	  output(n, prime);
++print prime
+$1 = 1
