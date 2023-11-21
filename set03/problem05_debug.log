@@ -4,3 +4,29 @@ Breakpoint 1 at 0x401430: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-
 Breakpoint 2 at 0x401463: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem05.c, line 17.
 +b 30
 Breakpoint 3 at 0x4014ca: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem05.c, line 30.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03/./problem05.exe 
+[New Thread 23540.0x8d8]
+[New Thread 23540.0x3cfc]
+
+Breakpoint 1, init_array (n=35, a=0x60fd6c)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem05.c:12
+12	  for (int i = 2; i <= n; i++)
++n
+14	    a[i] = 1;
++n
+12	  for (int i = 2; i <= n; i++)
++n
+14	    a[i] = 1;
++n
+12	  for (int i = 2; i <= n; i++)
++n
+14	    a[i] = 1;
++n
+12	  for (int i = 2; i <= n; i++)
++n
+14	    a[i] = 1;
++n
+12	  for (int i = 2; i <= n; i++)
++n
+14	    a[i] = 1;
