@@ -160,3 +160,5 @@ main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1
 Breakpoint 2, erotosthenes_sieve (n=35, a=0x60fd6c)
     at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem05.c:19
 19	  for (int i = 2; i * i <= n; i++)
++n
+21	    if (a[i] == 1)
