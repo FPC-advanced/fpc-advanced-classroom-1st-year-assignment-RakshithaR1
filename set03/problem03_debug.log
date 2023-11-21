@@ -1,0 +1,20 @@
++b 10
+Breakpoint 1 at 0x401430: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem03.c, line 10.
++b 26
+Breakpoint 2 at 0x401473: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem03.c, line 26.
++b 41
+Breakpoint 3 at 0x4014bb: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem03.c, line 41.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03/./problem03.exe 
+[New Thread 18468.0x5c34]
+[New Thread 18468.0x5888]
+
+Breakpoint 3, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem03.c:41
+41	  prime = is_prime(n);
++n
+
+Breakpoint 1, is_prime (n=2)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem03.c:12
+12	  if (n <= 1)
++n
+16	  for (int i = 2; i < n; i++)
