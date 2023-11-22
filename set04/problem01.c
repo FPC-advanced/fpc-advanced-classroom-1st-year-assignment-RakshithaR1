@@ -33,7 +33,8 @@ void add(int num1, int den1, int num2, int den2, int *res_num, int *res_den)
        int temp1;
       while(resden!=0)
       {
-        tmep
+        temp1=resden;
+        resden=resnum
       }
       *res_num= *res_num/gcd;
     
