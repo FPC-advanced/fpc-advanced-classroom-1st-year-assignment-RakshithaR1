@@ -1,0 +1,48 @@
++b 13
+Breakpoint 1 at 0x40143d: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem02.c, line 13.
++b 39
+Breakpoint 2 at 0x40154f: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem02.c, line 39.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04/./problem02.exe 
+[New Thread 18396.0x2e0c]
+[New Thread 18396.0x65d0]
+
+Breakpoint 2, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem02.c:39
+39	  small=smallest(x,y,z);
++n
+
+Breakpoint 1, smallest (a=..., b=..., c=...)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem02.c:16
+16	  p=a.num/a.den;
++p p
+$1 = 5.8841083e-039
++n
+17	  q=b.num/b.den;
++p p
+$2 = 0
++n
+18	  r=c.num/c.den;
++p q
+$3 = 0
++n
+19	  if(p<q&&p<r)
++n
+22	  }else if(q<r)
++n
+24	    return b;
++n
+28	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem02.c:40
+40	  output(x,y,z,small);
++n
+41	  return 0;
++n
+42	}+n
+0x004010fd in __mingw_CRTStartup ()
++q
+A debugging session is active.
+
+	Inferior 1 [process 18396] will be killed.
+
+Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
