@@ -17,16 +17,11 @@ void add(int num1, int den1, int num2, int den2, int *res_num, int *res_den)
     }else{
       a=den1;
       b=den2;
-      while(a!=b)
+      while(b!=0)
       {
-        if(a>b)
-        {
-          a=a-b;
-          temp=a;
-        }else{
-          b=b-a;
-          temp=b;
-        }
+        temp=b;
+        b=a%b;
+        
       }
       *res_den=(den1*den2)/temp;
       num1=num1*den2;
