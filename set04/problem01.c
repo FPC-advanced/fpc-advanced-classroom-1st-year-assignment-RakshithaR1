@@ -38,9 +38,7 @@ void add(int num1, int den1, int num2, int den2, int *res_num, int *res_den)
         resnum=temp1;
       }
       *res_num= *res_num/resnum;
-    
-
-}
+      }
 }
 void output(int num1, int den1, int num2, int den2, int res_num, int res_den)
 {
