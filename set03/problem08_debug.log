@@ -1,0 +1,133 @@
++b 28
+Breakpoint 1 at 0x401470: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem08.c, line 28.
++b 54
+Breakpoint 2 at 0x401557: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem08.c, line 54.
++b 77
+Breakpoint 3 at 0x401658: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem08.c, line 77.
++b 78
+Breakpoint 4 at 0x401667: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem08.c, line 78.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03/./problem08.exe 
+[New Thread 6252.0x658c]
+[New Thread 6252.0x4af8]
+
+Breakpoint 3, main ()
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem08.c:77
+77	  input_polygon(&p);
++n
+
+Breakpoint 1, input_polygon (p=0x60fbc8)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem08.c:31
+31	   p->sides=input_n();
++n
+32	   for(int i=0;i<p->sides;i++)
++n
+34	     sprintf(prompt,"Enter the coordiates of the point %d (x,y):\n",i+1);
++n
+35	     p->p[i]=input_point(prompt);
++n
+32	   for(int i=0;i<p->sides;i++)
++n
+34	     sprintf(prompt,"Enter the coordiates of the point %d (x,y):\n",i+1);
++n
+35	     p->p[i]=input_point(prompt);
++n
+32	   for(int i=0;i<p->sides;i++)
++n
+34	     sprintf(prompt,"Enter the coordiates of the point %d (x,y):\n",i+1);
++n
+35	     p->p[i]=input_point(prompt);
++n
+32	   for(int i=0;i<p->sides;i++)
++n
+34	     sprintf(prompt,"Enter the coordiates of the point %d (x,y):\n",i+1);
++n
+35	     p->p[i]=input_point(prompt);
++n
+32	   for(int i=0;i<p->sides;i++)
++print p->sides
+$1 = 4
++print p->p[3]
+$2 = {x = 9.40769933e+033, y = 5.60519386e-045}
++n
+37	   p->perimeter=0.0;
++n
+38	   }
++n
+
+Breakpoint 4, main ()
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem08.c:78
+78	  find_perimeter(&p);
++q
+A debugging session is active.
+
+	Inferior 1 [process 6252] will be killed.
+
+Quit anyway? (y or n) Not confirmed.
++r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03/./problem08.exe 
+[New Thread 13380.0x71e0]
+[New Thread 13380.0x6c74]
+
+Breakpoint 3, main ()
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem08.c:77
+77	  input_polygon(&p);
++n
+
+Breakpoint 1, input_polygon (p=0x60fbc8)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem08.c:31
+31	   p->sides=input_n();
++n
+32	   for(int i=0;i<p->sides;i++)
++n
+34	     sprintf(prompt,"Enter the coordiates of the point %d (x,y):\n",i+1);
++n
+35	     p->p[i]=input_point(prompt);
++n
+32	   for(int i=0;i<p->sides;i++)
++n
+34	     sprintf(prompt,"Enter the coordiates of the point %d (x,y):\n",i+1);
++n
+35	     p->p[i]=input_point(prompt);
++n
+32	   for(int i=0;i<p->sides;i++)
++n
+34	     sprintf(prompt,"Enter the coordiates of the point %d (x,y):\n",i+1);
++n
+35	     p->p[i]=input_point(prompt);
++n
+32	   for(int i=0;i<p->sides;i++)
++n
+34	     sprintf(prompt,"Enter the coordiates of the point %d (x,y):\n",i+1);
++n
+35	     p->p[i]=input_point(prompt);
++n
+32	   for(int i=0;i<p->sides;i++)
++n
+37	   p->perimeter=0.0;
++print p->p[0]
+$3 = {x = 0, y = 0}
++p p->-[1]
+A syntax error in expression, near `-[1]'.
++p p->p[1]
+$4 = {x = 1.40129846e-045, y = 0}
++p p->p[2]
+$5 = {x = 1.40129846e-045, y = 1.40129846e-045}
++n
+38	   }
++n
+
+Breakpoint 4, main ()
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem08.c:78
+78	  find_perimeter(&p);
++n
+
+Breakpoint 2, find_perimeter (p=0x60fbc8)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem08.c:57
+57	  f->p[0]=p->p[0];
++n
+59	  for(int i=1;i<p->sides;i++)
++n
+61	    dist[i-1]=find_distance(f->p[0],p->p[i]);

@@ -22,7 +22,7 @@ Point input_point(char *promt_msg)
 {
   Point x;
   printf("%s",promt_msg);
-  scanf("%d %d",&x.x,&x.y);
+  scanf("%f %f",&x.x,&x.y);
   return x;
 }
 void input_polygon(Polygon *p)
