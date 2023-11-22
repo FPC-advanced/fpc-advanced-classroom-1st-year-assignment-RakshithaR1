@@ -1,0 +1,63 @@
++b 9
+Breakpoint 1 at 0x40142e: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem06.c, line 9.
++b 29
+Breakpoint 2 at 0x4014a7: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem06.c, line 29.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04/./problem06.exe 
+[New Thread 456.0x5218]
+[New Thread 456.0x162c]
+
+Breakpoint 2, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem06.c:29
+29	  input_string(a);
++n
+30	  strcpy(b, a);
++n 
+31	  words = count_words(a);
++p b
+$1 = "hello world hello\000\000\000h%²\000\230ì\031é\b\000\000\000h%²\000p%²\000\200\022@\000Ð\023@\000\001\000\000\000?‚Rv\200\000\000\000Lþ`\000t%²\000„þ`\000\200\022@\000\000\025@\000\000\000\000\000?‚Rvt%²\000œþ`\000u‡Sv"
++n
+
+Breakpoint 1, count_words (string=0x60fe98 "hello world hello")
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem06.c:11
+11	  int words = 0;
++n
+12	  string = strtok(string, " ");
++n
+14	  while (string != NULL)
++n
+16	    words += 1;
++n
+17	    string = strtok(NULL, " ");
++n
+14	  while (string != NULL)
++n
+16	    words += 1;
++n
+17	    string = strtok(NULL, " ");
++n
+14	  while (string != NULL)
++n
+16	    words += 1;
++n
+17	    string = strtok(NULL, " ");
++n
+14	  while (string != NULL)
++n
+19	  return words;
++p words
+$2 = 3
++n
+20	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem06.c:32
+32	  output(b, words);
++n
+33	  return 0;
++n
+34	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 456) exited normally]
++q

@@ -1,2 +1,10 @@
 Compilation started at 11/21/2023, 5:33:13 PM
 Compilation finished at 11/21/2023, 5:33:14 PM
+Compilation started at 11/22/2023, 8:19:40 PM
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem02.c: In function 'is_triangle':
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem02.c:16:6: warning: implicit declaration of function 'fabs' [-Wimplicit-function-declaration]
+   if(fabs(area)<0.0001)
+      ^~~~
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem02.c:16:6: warning: incompatible implicit declaration of built-in function 'fabs'
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem02.c:16:6: note: include '<math.h>' or provide a declaration of 'fabs'
+Compilation finished at 11/22/2023, 8:19:41 PM

@@ -3,3 +3,9 @@ Breakpoint 1 at 0x401609: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-
 +b 28
 Breakpoint 2 at 0x401468: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem07.c, line 28.
 +q
++b 26
+Breakpoint 1 at 0x401466: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem07.c, line 26.
++b 49
+Breakpoint 2 at 0x4014e2: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem07.c, line 49.
++b 69
+Breakpoint 3 at 0x401587: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem07.c, line 69.

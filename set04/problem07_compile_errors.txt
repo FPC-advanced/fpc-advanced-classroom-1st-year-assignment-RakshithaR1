@@ -6,3 +6,18 @@ Compilation started at 11/16/2023, 3:59:13 PM
 Compilation finished at 11/16/2023, 3:59:14 PM
 Compilation started at 11/16/2023, 3:59:41 PM
 Compilation finished at 11/16/2023, 3:59:42 PM
+Compilation started at 11/22/2023, 2:41:07 PM
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem07.c: In function 'add_fractions':
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem07.c:30:7: error: redeclaration of 'lcm' with no linkage
+   int lcm;
+       ^~~
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem07.c:29:12: note: previous declaration of 'lcm' was here
+   int gcd, lcm;
+            ^~~
+Compilation finished at 11/22/2023, 2:41:08 PM
+Compilation started at 11/22/2023, 2:41:23 PM
+Compilation finished at 11/22/2023, 2:41:23 PM
+Compilation started at 11/22/2023, 2:43:33 PM
+Compilation finished at 11/22/2023, 2:43:34 PM
+Compilation started at 11/22/2023, 2:45:53 PM
+Compilation finished at 11/22/2023, 2:45:54 PM
