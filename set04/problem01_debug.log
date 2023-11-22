@@ -2,3 +2,86 @@
 Breakpoint 1 at 0x40145b: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem01.c, line 10.
 +b 58
 Breakpoint 2 at 0x40159d: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem01.c, line 58.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04/./problem01.exe 
+[New Thread 5172.0x5d8c]
+[New Thread 5172.0x657c]
+
+Breakpoint 2, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem01.c:58
+58	  add(n1,d1,n2,d2,&rn,&rd);
++n
+
+Breakpoint 1, add (num1=1, den1=4, num2=1, den2=2, res_num=0x60fedc, res_den=0x60fed8)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem01.c:13
+13	  if(den1==den2)
++n
+18	      a=den1;
++n
+19	      b=den2;
++n
+20	      while(b!=0)
++p a
+$1 = 4
++p b
+$2 = 2
++nn
+Undefined command: "nn".  Try "help".
++n
+22	        temp=b;
++n
+23	        b=a%b;
++n
+24	        a=temp;
++n
+20	      while(b!=0)
++n
+26	      *res_den=(den1*den2)/a;
++n
+27	      num1=num1*den2;
++p res_den
+$3 = (int *) 0x60fed8
++n
+28	      num2=num2*den1;
++n
+29	      *res_num=num1+num2;
++n
+31	       resnum=*res_num;
++n
+32	       resden=*res_den;
++n
+34	      while(resnum!=resden)
++n
+36	        if(resnum>resden)
++n
+38	          resnum=resnum-resden;
++n
+39	          gcd=resnum;
++n
+34	      while(resnum!=resden)
++n
+36	        if(resnum>resden)
++n
+41	          resden=resden-resnum;
++n
+42	          gcd=resden;
++p *res_den
+$4 = 4
++n
+34	      while(resnum!=resden)
++n
+45	      *res_num= *res_num/gcd;
++n
+49	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem01.c:59
+59	  output(n1,d1,n2,d2,rn,rd);
++n
+60	  return 0;
++n
+61	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 5172) exited normally]
++q
