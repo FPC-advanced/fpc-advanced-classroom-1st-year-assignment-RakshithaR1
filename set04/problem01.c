@@ -34,7 +34,7 @@ void add(int num1, int den1, int num2, int den2, int *res_num, int *res_den)
       while(resden!=0)
       {
         temp1=resden;
-        resden=resnum
+        resden=resnum%resden
       }
       *res_num= *res_num/gcd;
     
