@@ -31,16 +31,9 @@ void add(int num1, int den1, int num2, int den2, int *res_num, int *res_den)
        resnum=*res_num;
        resden=*res_den;
        int gcd;
-      while(resnum!=resden)
+      while(res)
       {
-        if(resnum>resden)
-        {
-          resnum=resnum-resden;
-          gcd=resnum;
-        }else{
-          resden=resden-resnum;
-          gcd=resden;
-        }
+       
       }
       *res_num= *res_num/gcd;
     
