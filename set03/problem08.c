@@ -56,12 +56,12 @@ void find_perimeter(Polygon* p)
   Polygon f[100];
   f->p[0]=p->p[0];
   float dist[100];
-  for(int i=1;i<=p->sides;i++)
+  for(int i=1;i<p->sides;i++)
   {
     dist[i-1]=find_distance(f->p[0],p->p[i]);
     f->p[0]=p->p[i];
   }
-  for(int j=0;j<=p->sides;j++)
+  for(int j=0;j<p->sides;j++)
   {
     p->perimeter+=dist[j];
   }
