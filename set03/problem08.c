@@ -29,7 +29,7 @@ void input_polygon(Polygon *p)
 {
   char prompt[100];
    p->sides=input_n();
-   for(int i=1;i<=p->sides;i++)
+   for(int i=1;i<p->sides;i++)
    {
      sprintf(prompt,"Enter the coordiates of the point %d (x,y):\n",i+1);
      p->p[i]=input_point(prompt);
@@ -43,7 +43,7 @@ float find_distance(Point a, Point b)
   dy=b.y-a.y;
   sr=(dx*dx)+(dy*dy);
   float guess=sr;
-  float preguess;
+  float preguess=0;
   while(fabs(guess-preguess)>0.0001)
   {
     preguess=guess;
