@@ -1,0 +1,78 @@
++b 26
+Breakpoint 1 at 0x4014a3: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem04.c, line 26.
++b 35
+Breakpoint 2 at 0x4014fb: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem04.c, line 35.
++b 61
+Breakpoint 3 at 0x4015e7: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem04.c, line 61.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04/./problem04.exe 
+[New Thread 21312.0x36e8]
+[New Thread 21312.0x5edc]
+
+Breakpoint 3, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem04.c:61
+61	  horner=evaluate_polynomial(n,x,y);
++n
+
+Breakpoint 1, evaluate_polynomial (n=1, a=0x60ef54, x=1)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem04.c:28
+28	  float deg=0;
++n
+29	  for( int i=0;i<=n;i++)
++n
+31	    deg+=a[i]*pow(x,i) ;
++n
+29	  for( int i=0;i<=n;i++)
++n
+31	    deg+=a[i]*pow(x,i) ;
++n
+29	  for( int i=0;i<=n;i++)
++p deg
+$1 = 2
++n
+33	  return deg;
++n
+34	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem04.c:62
+62	  output(n,x,y,horner);
++n
+
+Breakpoint 2, output (n=1, a=0x60ef54, x=1, result=2)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem04.c:38
+38	  printf("H(1,1,1) = ");
++n
+39	   for(int i=0;i<=n;i++)
++n
+41	    while(i==0)
++n
+43	    printf("%.2f ",a[i]);
++n
+44	    break;
++n
+46	    if(i>0 && i<=n)
++n
+39	   for(int i=0;i<=n;i++)
++n
+41	    while(i==0)
++n
+46	    if(i>0 && i<=n)
++n
+48	      printf(" + %.2f*%.2f^%d ",a[i],x,i);
++n
+39	   for(int i=0;i<=n;i++)
++n
+51	    printf(" = %f",result);
++n
+53	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem04.c:63
+63	  return 0;
++n
+64	}
++n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 21312) exited normally]
++q

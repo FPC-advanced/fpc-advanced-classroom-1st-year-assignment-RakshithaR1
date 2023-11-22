@@ -1,0 +1,95 @@
++b 10
+Breakpoint 1 at 0x40144d: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem03.c, line 10.
++b 38
+Breakpoint 2 at 0x40152d: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem03.c, line 38.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04/./problem03.exe 
+[New Thread 23428.0x54cc]
+[New Thread 23428.0x2eac]
+
+Breakpoint 2, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem03.c:38
+38	  result=nCr(n,r);
++n
+
+Breakpoint 1, nCr (n=5, r=4)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem03.c:12
+12	  int num=1,den,dif,fac=1,fac2=1,comb;
++n
+13	  for(int i=1;i<=n;i++)
++n
+15	   num *= i;
++n
+13	  for(int i=1;i<=n;i++)
++n
+15	   num *= i;
++n
+13	  for(int i=1;i<=n;i++)
++n
+15	   num *= i;
++n
+13	  for(int i=1;i<=n;i++)
++n
+15	   num *= i;
++n
+13	  for(int i=1;i<=n;i++)
++n
+15	   num *= i;
++n
+13	  for(int i=1;i<=n;i++)
++n
+17	  dif=n-r;
++n
+18	  for(int i=1;i<=dif;i++)
++n
+20	    fac *= i;
++n
+18	  for(int i=1;i<=dif;i++)
++n
+22	  for(int i=1;i<=r;i++)
++n
+24	    fac2 *= i;
++n
+22	  for(int i=1;i<=r;i++)
++n
+24	    fac2 *= i;
++n
+22	  for(int i=1;i<=r;i++)
++n
+24	    fac2 *= i;
++n
+22	  for(int i=1;i<=r;i++)
++n
+24	    fac2 *= i;
++n
+22	  for(int i=1;i<=r;i++)
++n
+26	  den=fac*fac2;
++n
+27	  comb=num/den;
++p fac
+$1 = 1
++p fac2
+$2 = 24
++p num
+$3 = 120
++p den
+$4 = 24
++n
+28	  return comb;
++p comb
+$5 = 5
++n
+29	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem03.c:39
+39	  output(n,r,result);
++n
+40	  return 0;
++n
+41	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 23428) exited normally]
++q
