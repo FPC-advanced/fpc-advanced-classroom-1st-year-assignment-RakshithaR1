@@ -1,5 +1,6 @@
 //program to find the perimeter of a polygon
 #include<stdio.h>
+#include<math.h>
 typedef struct point {
     float x,y;
 }Point;
