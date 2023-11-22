@@ -21,9 +21,9 @@ void add(int num1, int den1, int num2, int den2, int *res_num, int *res_den)
       {
         temp=b;
         b=a%b;
-        
+        a=temp;
       }
-      *res_den=(den1*den2)/temp;
+      *res_den=(den1*den2)/a;
       num1=num1*den2;
       num2=num2*den1;
       *res_num=num1+num2;
