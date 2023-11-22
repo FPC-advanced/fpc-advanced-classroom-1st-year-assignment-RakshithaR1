@@ -29,7 +29,7 @@ void input_polygon(Polygon *p)
 {
   char prompt[100];
    p->sides=input_n();
-   for(int i=0;i<p->sides;i++)
+   for(int i=1;i<=p->sides;i++)
    {
      sprintf(prompt,"Enter the coordiates of the point %d (x,y):\n",i+1);
      p->p[i]=input_point(prompt);
@@ -61,7 +61,7 @@ void find_perimeter(Polygon* p)
     dist[i-1]=find_distance(f->p[0],p->p[i]);
     f->p[0]=p->p[i];
   }
-  for(int j=0;j<=p->sides;j++)
+  for(int j=0;j<p->sides;j++)
   {
     p->perimeter+=dist[j];
   }
