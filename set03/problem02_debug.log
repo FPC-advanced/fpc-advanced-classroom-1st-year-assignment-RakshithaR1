@@ -193,3 +193,36 @@ Single stepping until exit from function __mingw_CRTStartup,
 which has no line number information.
 [Inferior 1 (process 1532) exited normally]
 +q
++b 13
+Breakpoint 1 at 0x401481: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem02.c, line 13.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03/./problem02.exe 
+[New Thread 9536.0x4e60]
+[New Thread 9536.0x7324]
+
+Breakpoint 1, is_triangle (x1=0, y1=0, x2=9.99999972e-010, y2=0, x3=0, y3=9.99999972e-010)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem02.c:16
+16	  area = 0.5 * (x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2));
++p area
+$1 = 5.8841083e-039
++p fabs(area)
+$2 = 4991
++n
+17	 if (fabs(area)< 0.000001)
++n
+19	    return 0;
++n
+25	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem02.c:43
+43	  output(x1, y1, x2, y2, x3, y3, area);
++n
+44	  return 0;
++n
+45	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 9536) exited normally]
++q

@@ -13,15 +13,8 @@ float find_distance(float x1, float y1, float x2, float y2)
   float dx = x2 - x1;
   float dy = y2 - y1;
   float sqr_dist = (dx * dx) + (dy * dy);
-  float guess = sqr_dist;
-  float pre_guess;
-
-  while (fabs(guess - pre_guess) > 0.0001)
-  {
-    pre_guess = guess;
-    guess = 0.5 * (guess + sqr_dist / guess);
-  }
-  return guess;
+  
+  return sqrt(sqr_dist);
 }
 void output(float x1, float y1, float x2, float y2, float distance)
 {

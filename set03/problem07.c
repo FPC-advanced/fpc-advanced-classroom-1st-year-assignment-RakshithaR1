@@ -35,15 +35,8 @@ void find_length(Line *l)
   dx = l->p2.x - l->p1.x;
   dy = l->p2.y - l->p1.y;
   float area = (dx * dx) + (dy * dy);
-  float guess = area;
-  float prev_guess;
-
-  while (fabs(guess - prev_guess) > 0.0001)
-  {
-    prev_guess = guess;
-    guess = 0.5 * (guess + area / guess);
-  }
-  l->distance = guess;
+ 
+  l->distance = sqrt(area);
 }
 void output(Line l)
 {
