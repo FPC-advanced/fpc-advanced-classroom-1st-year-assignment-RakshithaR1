@@ -1,0 +1,20 @@
+Compilation started at 11/22/2023, 11:39:34 AM
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem08.c: In function 'input_polygon':
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem08.c:37:11: warning: return makes integer from pointer without a cast [-Wint-conversion]
+    return p;
+           ^
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem08.c: In function 'find_distance':
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem08.c:47:9: warning: implicit declaration of function 'fabs' [-Wimplicit-function-declaration]
+   while(fabs(guess-preguess)>0.0001)
+         ^~~~
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem08.c:47:9: warning: incompatible implicit declaration of built-in function 'fabs'
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem08.c:47:9: note: include '<math.h>' or provide a declaration of 'fabs'
+Compilation finished at 11/22/2023, 11:39:35 AM
+Compilation started at 11/22/2023, 11:42:13 AM
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem08.c: In function 'find_distance':
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem08.c:46:9: warning: implicit declaration of function 'fabs' [-Wimplicit-function-declaration]
+   while(fabs(guess-preguess)>0.0001)
+         ^~~~
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem08.c:46:9: warning: incompatible implicit declaration of built-in function 'fabs'
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem08.c:46:9: note: include '<math.h>' or provide a declaration of 'fabs'
+Compilation finished at 11/22/2023, 11:42:14 AM
