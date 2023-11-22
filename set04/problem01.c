@@ -30,10 +30,10 @@ void add(int num1, int den1, int num2, int den2, int *res_num, int *res_den)
        int resden,resnum;
        resnum=*res_num;
        resden=*res_den;
-       int gcd;
-      while(res)
+       int temp1;
+      while(resden!=0)
       {
-       
+        tmep
       }
       *res_num= *res_num/gcd;
     
