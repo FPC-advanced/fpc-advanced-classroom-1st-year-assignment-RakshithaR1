@@ -40,7 +40,7 @@ float find_distance(Point a, Point b)
 {
   float dx,dy,sr;
   dx=b.x-a.x;
-  dy=b.y-a.x;
+  dy=b.y-a.y;
   sr=(dx*dx)+(dy*dy);
   float guess=sr;
   float preguess;
