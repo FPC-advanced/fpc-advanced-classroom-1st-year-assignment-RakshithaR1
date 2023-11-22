@@ -59,12 +59,13 @@ void find_perimeter(Polygon* p)
   for(int i=1;i<p->sides;i++)
   {
     dist[i-1]=find_distance(f->p[0],p->p[i]);
+    p->perimeter+=dist[i];
     f->p[0]=p->p[i];
   }
   p->perimeter=0.0;
   for(int j=0;j<p->sides;j++)
   {
-    p->perimeter+=dist[j];
+    
   }
 }
 void output(Polygon p)
