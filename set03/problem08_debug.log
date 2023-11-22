@@ -586,3 +586,60 @@ Single stepping until exit from function __mingw_CRTStartup,
 which has no line number information.
 [Inferior 1 (process 12972) exited normally]
 +q
++b 54
+Breakpoint 1 at 0x40155c: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem08.c, line 54.
++b 75
+Breakpoint 2 at 0x40165f: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem08.c, line 75.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03/./problem08.exe 
+[New Thread 27020.0x6d7c]
+[New Thread 27020.0x7efc]
+
+Breakpoint 2, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem08.c:75
+75	  find_perimeter(&p);
++n
+
+Breakpoint 1, find_perimeter (p=0x60fbc8)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem08.c:57
+57	  f->p[0]=p->p[0];
++n
+59	  for(int i=1;i<p->sides;i++)
++n
+61	    dist[i-1]=find_distance(f->p[0],p->p[i]);
++n
+62	    p->perimeter+=dist[i-1];
++n
+63	    f->p[0]=p->p[i];
++n
+59	  for(int i=1;i<p->sides;i++)
++n
+61	    dist[i-1]=find_distance(f->p[0],p->p[i]);
++n
+62	    p->perimeter+=dist[i-1];
++n
+63	    f->p[0]=p->p[i];
++n
+59	  for(int i=1;i<p->sides;i++)
++n
+61	    dist[i-1]=find_distance(f->p[0],p->p[i]);
++n
+62	    p->perimeter+=dist[i-1];
++n
+63	    f->p[0]=p->p[i];
++n
+59	  for(int i=1;i<p->sides;i++)
++n
+65	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem08.c:76
+76	  output(p);
++n
+77	  return 0;
++n
+78	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 27020) exited normally]
++q
