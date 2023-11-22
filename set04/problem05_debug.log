@@ -1,0 +1,66 @@
++b 19
+Breakpoint 1 at 0x40148f: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem05.c, line 19.
++b 43
+Breakpoint 2 at 0x401531: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem05.c, line 43.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04/./problem05.exe 
+[New Thread 2876.0x172c]
+[New Thread 2876.0x4734]
+
+Breakpoint 2, main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem05.c:43
+43	  index=find_largest_index(n,a);
++n
+
+Breakpoint 1, find_largest_index (n=5, a=0x60fd68)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem05.c:21
+21	 int index=a[0];
++n
+23	  for(int i=0;i<n;i++)
++n
+25	    if (a[i]>index)
++n
+23	  for(int i=0;i<n;i++)
++n
+25	    if (a[i]>index)
++n
+23	  for(int i=0;i<n;i++)
++n
+25	    if (a[i]>index)
++n
+27	      index=a[i];
++n
+28	      large=i;
++p index
+$1 = 9
++n
+23	  for(int i=0;i<n;i++)
++n
+25	    if (a[i]>index)
++n
+23	  for(int i=0;i<n;i++)
++p large
+$2 = 2
++n
+25	    if (a[i]>index)
++n
+23	  for(int i=0;i<n;i++)
++n
+32	  return large;
++n
+33	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem05.c:44
+44	  output(index);
++p index
+$3 = 2
++n
+45	  return 0;
++n
+46	}
++n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 2876) exited normally]
++q
