@@ -1,5 +1,6 @@
 // Program to find whether the given 3 points form a triangle
 #include <stdio.h>
+#include<math.h>
 void input_triangle(float *x1, float *y1, float *x2, float *y2, float *x3, float *y3)
 {
   printf("Enter the x and y co-ordinates of the 1st point: ");
@@ -13,7 +14,7 @@ int is_triangle(float x1, float y1, float x2, float y2, float x3, float y3)
 {
   float area;
   area = 0.5 * (x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2));
-  if(area<0.000001)
+  if(fabs(area)<0.000001)
   {
     return 1;
   }else{
