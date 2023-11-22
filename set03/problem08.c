@@ -29,7 +29,7 @@ void input_polygon(Polygon *p)
 {
   char prompt[100];
    p->sides=input_n();
-   for(int i=1;i<p->sides;i++)
+   for(int i=0;i<p->sides;i++)
    {
      sprintf(prompt,"Enter the coordiates of the point %d (x,y):\n",i+1);
      p->p[i]=input_point(prompt);
