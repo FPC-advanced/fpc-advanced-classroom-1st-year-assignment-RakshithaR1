@@ -29,18 +29,14 @@ void input_n_fractions(int n, Fraction f[n])
 }
 int find_gcd(int a, int b)
 {
-  
-  while(a!=b)
+  int temp;
+  while(b!=0)
   {
-    if(a>b)
-    {
-      a=a-b;
-      return a;
-    }else{
-      b=b-a;
-      return b;
-    }
+    temp=b;
+    b=a%b;
+    a=temp;
   }
+  return a;
 }
 Fraction add_fractions(Fraction f1, Fraction f2)
 {
@@ -61,7 +57,7 @@ Fraction add_fractions(Fraction f1, Fraction f2)
       resden=sum.den;
       resgcd=find_gcd(resnum,resden);
       sum.num=sum.num/resgcd;
-     
+      sum.den=sum.den/resgcd;
   }
   return sum;
 }
