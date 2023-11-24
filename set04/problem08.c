@@ -46,7 +46,7 @@ Fraction add_fractions(Fraction f1, Fraction f2)
   {
     sum.num=f1.num+f2.num;
     sum.den=f1.den;
-    
+    return sum;
   }else{
       gcd=find_gcd(f1.den,f2.den);
       sum.den=(f1.den*f2.den)/gcd;
@@ -58,8 +58,9 @@ Fraction add_fractions(Fraction f1, Fraction f2)
       resgcd=find_gcd(resnum,resden);
       sum.num=sum.num/resgcd;
       sum.den=sum.den/resgcd;
+      return sum;
   }
-  return sum;
+  
 }
 Fraction add_n_fractions(int n, Fraction f[n])
 {
