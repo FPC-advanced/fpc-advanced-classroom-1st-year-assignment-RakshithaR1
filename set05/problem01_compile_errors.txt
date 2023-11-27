@@ -125,3 +125,5 @@ c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-ass
   *res = square(sqr);
          ^~~~~~
 Compilation finished at 11/27/2023, 9:35:59 AM
+Compilation started at 11/27/2023, 9:39:56 AM
+Compilation finished at 11/27/2023, 9:39:57 AM

@@ -16,6 +16,16 @@ Point input()
   scanf("%f", &a.y);
   return a;
 }
+float square(float n)
+{
+   int guess = n, preguess;
+  while (fabs(guess - preguess) > 0.0001)
+  {
+    preguess = guess;
+    guess = 0.5 * (guess + n / guess);
+  }
+  return guess;
+}
 void dist(Point a, Point b, float *res)
 {
   float c, d, sqr;
