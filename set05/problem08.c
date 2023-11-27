@@ -20,7 +20,7 @@ void input(int n, Camel c[n], float *truck_weight)
     c[i].weight = 0;
   }
   printf("Enter the weight of the truck:\n");
-  scanf("%f", truck_weight);
+  scanf("%f", &truck_weight);
 }
 void find_camel_weight(int n, Camel c[n])
 {
