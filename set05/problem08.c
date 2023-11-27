@@ -7,7 +7,8 @@ typedef struct _camel
 } Camel;
 int input_n()
 {
-  
+  int n;
+  printf("Enter the ")
 }
 void input(int n, Camel c[n], float *truck_weight)
 {
