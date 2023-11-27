@@ -1,0 +1,87 @@
++b 8
+Breakpoint 1 at 0x40142e: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem07.c, line 8.
++b 28
+Breakpoint 2 at 0x401523: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem07.c, line 28.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05/./problem07.exe 
+[New Thread 3312.0x5f5c]
+[New Thread 3312.0x2b74]
+
+Breakpoint 1, has_nice_name (c=0x60fe98 "Conky")
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem07.c:10
+10	  int vov=0,con=0;
++n
+11	  for(int i=0;c[i]!='\0';i++)
++n
+14	    if(c[i]=='a'||c[i]=='e'||c[i]=='i'||c[i]=='u'||c[i]=='o'||c[i]=='A'||c[i]=='E'||c[i]=='I'||c[i]=='O'||c[i]=='U')
++p c[i]
+$1 = 67 'C'
++n
+18	      con +=1;
++n
+11	  for(int i=0;c[i]!='\0';i++)
++p c[i]
+$2 = 67 'C'
++n
+14	    if(c[i]=='a'||c[i]=='e'||c[i]=='i'||c[i]=='u'||c[i]=='o'||c[i]=='A'||c[i]=='E'||c[i]=='I'||c[i]=='O'||c[i]=='U')
++p c[i]
+$3 = 111 'o'
++n
+16	      vov+=1;
++n
+11	  for(int i=0;c[i]!='\0';i++)
++n
+14	    if(c[i]=='a'||c[i]=='e'||c[i]=='i'||c[i]=='u'||c[i]=='o'||c[i]=='A'||c[i]=='E'||c[i]=='I'||c[i]=='O'||c[i]=='U')
++p c[i]
+$4 = 110 'n'
++n
+18	      con +=1;
++p &c[i]
+$5 = 0x60fe9a "nky"
++n
+11	  for(int i=0;c[i]!='\0';i++)
++n
+14	    if(c[i]=='a'||c[i]=='e'||c[i]=='i'||c[i]=='u'||c[i]=='o'||c[i]=='A'||c[i]=='E'||c[i]=='I'||c[i]=='O'||c[i]=='U')
++p c[i]
+$6 = 107 'k'
++n
+18	      con +=1;
++n
+11	  for(int i=0;c[i]!='\0';i++)
++n
+14	    if(c[i]=='a'||c[i]=='e'||c[i]=='i'||c[i]=='u'||c[i]=='o'||c[i]=='A'||c[i]=='E'||c[i]=='I'||c[i]=='O'||c[i]=='U')
++p c[i]
+$7 = 121 'y'
++n
+18	      con +=1;
++n
+11	  for(int i=0;c[i]!='\0';i++)
++n
+21	  if(vov>=2&&con>=2)
++n
+25	    return 0;
++n
+27	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem07.c:43
+43	  output(result);
++n
+
+Breakpoint 2, output (res=0)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem07.c:30
+30	  if(res==1)
++n
+34	    printf("The camel does not have a nice name.");
++n
+36	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem07.c:44
+44	  return 0;
++n
+45	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 3312) exited normally]
++q
