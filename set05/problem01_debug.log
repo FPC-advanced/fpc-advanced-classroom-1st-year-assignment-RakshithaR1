@@ -1,0 +1,6 @@
++b 17
+Breakpoint 1 at 0x401455: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c, line 17.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05/./problem01.exe 
+[New Thread 16148.0x40d0]
+[New Thread 16148.0x5f74]
