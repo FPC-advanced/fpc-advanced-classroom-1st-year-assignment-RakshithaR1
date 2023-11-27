@@ -18,7 +18,7 @@ float borga_x(int x)
    {
      if(j%2!=0)
      {
-     
+       if(int y=1;y<=j;)
      }
    }
 }
