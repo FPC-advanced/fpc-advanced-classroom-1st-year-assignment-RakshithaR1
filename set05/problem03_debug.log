@@ -44,3 +44,51 @@ Single stepping until exit from function __mingw_CRTStartup,
 which has no line number information.
 [Inferior 1 (process 11168) exited normally]
 +q
++info b
+No breakpoints or watchpoints.
++b 22
+Breakpoint 1 at 0x401493: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem03.c, line 22.
++info b
+Num     Type           Disp Enb Address    What
+1       breakpoint     keep y   0x00401493 in find_weight 
+                                           at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem03.c:22
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05/./problem03.exe 
+[New Thread 34832.0x5234]
+[New Thread 34832.0x1fd0]
+
+Breakpoint 1, find_weight (c=0x60fef0)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem03.c:24
+24	  float preguess = c->height * c->length, sq, guess;
++n
+25	   guess=sqrt(preguess);
++p preguess
+$1 = 1
++n
+26	  sq = c->radius * c->radius * c->radius;
++p guess
+$2 = 1
++n
+27	  const float pi=3.1415;
++n
+28	  c->weight = pi * sq * guess;
++n
+29	}
++p c
+$3 = (Camel *) 0x60fef0
++p *c
+$4 = {radius = 1, height = 1, length = 1, weight = 3.1415}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem03.c:39
+39	  output(c);
++n
+40	  return 0;
++n
+41	}
++n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 34832) exited normally]
++q
