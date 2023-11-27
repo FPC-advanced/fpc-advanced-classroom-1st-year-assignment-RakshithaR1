@@ -10,7 +10,7 @@ int input_n()
   int n;
   printf("Enter the number of camels:\n");
   scanf("%d",&n);
-  
+  return n;
 }
 void input(int n, Camel c[n], float *truck_weight)
 {
@@ -55,10 +55,10 @@ void output(float total_weight)
 }
 int main()
 {
-  int n;
+  int n=input_n();
   Camel c[100];
   float truckweight, total;
-  input(&n, c, &truckweight);
+  input(n, c, &truckweight);
   find_camel_weight(n, c);
   total = compute_total_weight(n, c, truckweight);
   output(total);
