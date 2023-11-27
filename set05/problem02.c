@@ -14,7 +14,7 @@ float find_weight(float radius, float height, float length)
 {
   float we, sq;
    we=height*length;
-   float guess=sqrt(we)
+   float guess=sqrt(we);
   sq = radius * radius * radius;
   return 3.1415 * sq * guess;
 }
