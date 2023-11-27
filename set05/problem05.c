@@ -16,8 +16,10 @@ float borga_x(int x)
    }
    for(int j=0;j<x;j++)
    {
-     if()
-     d[i]=
+     if(j%2!=0)
+     {
+     d[j]=
+     }
    }
 }
 void output(int x,float result)
