@@ -26,3 +26,40 @@ $3 = 2
 26	    preguess = guess;
 +n
 27	    guess = 0.5 * (guess + sqr / guess);
++n
+24	  while (fabs(guess - preguess) > 0.0001)
++p guess
+$4 = 1
++n
+26	    preguess = guess;
++n
+27	    guess = 0.5 * (guess + sqr / guess);
++n
+24	  while (fabs(guess - preguess) > 0.0001)
++p guess
+$5 = 1
++n
+29	  *res = guess;
++n
+30	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c:42
+42	  output(x, y, dista);
++step
+output (a=..., b=..., res=1)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c:33
+33	  printf("The Distance between (%.1f,%.1f) and (%.1f,%.1f) is %.1f", a.x, a.y, b.x, b.y, res);
++n
+34	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c:43
+43	  return 0;
++n
+44	}
++n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 16148) exited normally]
++q

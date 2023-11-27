@@ -20,13 +20,7 @@ void dist(Point a, Point b, float *res)
   c = b.x - a.x;
   d = b.y - a.y;
   sqr = (c * c) + (d * d);
-  int guess = sqr, preguess;
-  while (fabs(guess - preguess) > 0.0001)
-  {
-    preguess = guess;
-    guess = 0.5 * (guess + sqr / guess);
-  }
-  *res = guess;
+    *res = sqr;
 }
 void output(Point a, Point b, float res)
 {
