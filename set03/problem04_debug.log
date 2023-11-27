@@ -291,3 +291,81 @@ Single stepping until exit from function __mingw_CRTStartup,
 which has no line number information.
 [Inferior 1 (process 19228) exited normally]
 +q
++b 10
+Breakpoint 1 at 0x401430: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem04.c, line 10.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03/./problem04.exe 
+[New Thread 12244.0x5558]
+[New Thread 12244.0x95f4]
+
+Breakpoint 1, find_fibo (n=5) at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem04.c:12
+12	  int a = 0, b = 1, c;
++n
+14	  for (int i = 0; i < n; i++)
++n
+16	    c = a + b;
++n
+17	    a = b;
++n
+18	    b = c;
++n
+14	  for (int i = 0; i < n; i++)
++n
+16	    c = a + b;
++n
+17	    a = b;
++p c
+$1 = 2
++n
+18	    b = c;
++n
+14	  for (int i = 0; i < n; i++)
++n
+16	    c = a + b;
++p a
+$2 = 1
++n
+17	    a = b;
++n
+18	    b = c;
++n
+14	  for (int i = 0; i < n; i++)
++n
+16	    c = a + b;
++p a
+$3 = 2
++n
+17	    a = b;
++n
+18	    b = c;
++n
+14	  for (int i = 0; i < n; i++)
++p a
+$4 = 3
++n
+16	    c = a + b;
++n
+17	    a = b;
++n
+18	    b = c;
++p a
+$5 = 5
++n
+14	  for (int i = 0; i < n; i++)
++n
+20	  return a;
++n
+21	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem04.c:31
+31	  output(n, fibo);
++n
+32	  return 0;
++n
+33	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 12244) exited normally]
++q
