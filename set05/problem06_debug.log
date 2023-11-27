@@ -1,0 +1,166 @@
++b 18
+Breakpoint 1 at 0x401479: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem06.c, line 18.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05/./problem06.exe 
+[New Thread 33028.0x948c]
+[New Thread 33028.0x67c8]
+
+Breakpoint 1, odd_average (n=5, a=0x60fd68)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem06.c:20
+warning: Source file is more recent than executable.
+20	  float sum = 0.0;
++n
+21	  int counts = 0;
++n
+22	  for (int i = 0; i <= n; i++)
++n
+24	    if (a[i] % 2 != 0)
++n
+26	      sum += a[i];
++n
+27	      counts += 1;
++n
+22	  for (int i = 0; i <= n; i++)
++n
+24	    if (a[i] % 2 != 0)
++n
+22	  for (int i = 0; i <= n; i++)
++n
+24	    if (a[i] % 2 != 0)
++n
+26	      sum += a[i];
++n
+27	      counts += 1;
++n
+22	  for (int i = 0; i <= n; i++)
++n
+24	    if (a[i] % 2 != 0)
++n
+22	  for (int i = 0; i <= n; i++)
++n
+24	    if (a[i] % 2 != 0)
++n
+22	  for (int i = 0; i <= n; i++)
++n
+24	    if (a[i] % 2 != 0)
++n
+22	  for (int i = 0; i <= n; i++)
++p i
+$1 = 5
++n
+30	  return sum / counts;
++n
+31	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem06.c:43
+43	  output(avg);
++n
+44	  return 0;
++n
+45	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 33028) exited normally]
++q
++info b
+No breakpoints or watchpoints.
++b 18
+Breakpoint 1 at 0x401479: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem06.c, line 18.
++n
+The program is not being run.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05/./problem06.exe 
+[New Thread 32980.0x7f18]
+[New Thread 32980.0x3e80]
+
+Breakpoint 1, odd_average (n=5, a=0x60fd68)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem06.c:20
+20	  float sum = 0.0;
++n
+21	  int counts = 0;
++n
+22	  for (int i = 0; i <n; i++)
++n
+24	    if (a[i] % 2 != 0)
++n
+26	      sum += a[i];
++n
+27	      counts += 1;
++n
+22	  for (int i = 0; i <n; i++)
++n
+24	    if (a[i] % 2 != 0)
++n
+22	  for (int i = 0; i <n; i++)
++n
+24	    if (a[i] % 2 != 0)
++n
+26	      sum += a[i];
++n
+27	      counts += 1;
++n
+22	  for (int i = 0; i <n; i++)
++n
+24	    if (a[i] % 2 != 0)
++n
+22	  for (int i = 0; i <n; i++)
++n
+24	    if (a[i] % 2 != 0)
++n
+26	      sum += a[i];
++n
+27	      counts += 1;
++n
+22	  for (int i = 0; i <n; i++)
++n
+30	  return sum / counts;
++n
+31	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem06.c:43
+43	  output(avg);
++n
+44	  return 0;
++n
+45	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 32980) exited normally]
++q
++b 23
+Breakpoint 1 at 0x401485: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem06.c, line 23.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05/./problem06.exe 
+[New Thread 26748.0x82e8]
+[New Thread 26748.0x4668]
+
+Breakpoint 1, odd_average (n=5, a=0x60fd68)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem06.c:23
+23	  for ( i = 0; i <n && a[i] % 2 != 0; i++)
++n
+26	      sum += a[i];
++n
+27	      counts += 1;
++n
+23	  for ( i = 0; i <n && a[i] % 2 != 0; i++)
++n
+30	  return sum / counts;
++n
+31	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem06.c:43
+43	  output(avg);
++n
+44	  return 0;
++n
+45	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 26748) exited normally]
++q
