@@ -1,0 +1,8 @@
++b 25
+Breakpoint 1 at 0x40151d: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem08.c, line 25.
++b 37
+Breakpoint 2 at 0x4015d0: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem08.c, line 37.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05/./problem08.exe 
+[New Thread 9000.0x818c]
+[New Thread 9000.0xe54]
