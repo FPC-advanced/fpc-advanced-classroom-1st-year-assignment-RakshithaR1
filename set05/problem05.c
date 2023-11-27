@@ -18,7 +18,7 @@ float borga_x(int x)
    {
      if(j%2!=0)
      {
-     d[j]=
+     
      }
    }
 }
