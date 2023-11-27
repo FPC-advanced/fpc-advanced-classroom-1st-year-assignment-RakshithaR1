@@ -22,8 +22,9 @@ void dist(Point a, Point b, float *res)
   c = b.x - a.x;
   d = b.y - a.y;
   sqr = (c * c) + (d * d);
- *res = sqrt(sqr);
+ *res = ;
 }
+
 void output(Point a, Point b, float res)
 {
   printf("The Distance between (%.1f,%.1f) and (%.1f,%.1f) is %.1f", a.x, a.y, b.x, b.y, res);
