@@ -63,3 +63,70 @@ Single stepping until exit from function __mingw_CRTStartup,
 which has no line number information.
 [Inferior 1 (process 16148) exited normally]
 +q
++b 29
+Breakpoint 1 at 0x4014bc: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c, line 29.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05/./problem01.exe 
+[New Thread 16092.0x2f2c]
+[New Thread 16092.0x93e8]
+
+Breakpoint 1, dist (a=..., b=..., res=0x60feec)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c:32
+32	  c = b.x - a.x;
++p a
+$1 = {x = 1, y = 1}
++p b
+$2 = {x = 2, y = 2}
++n
+33	  d = b.y - a.y;
++n
+34	  sqr = (c * c) + (d * d);
++n
+35	 *res = square(sqr);
++step
+square (n=2) at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c:21
+21	   int guess = n, preguess;
++step
+22	  while (fabs(guess - preguess) > 0.0001)
++n
+24	    preguess = guess;
++n
+25	    guess = 0.5 * (guess + n / guess);
++n
+22	  while (fabs(guess - preguess) > 0.0001)
++n
+24	    preguess = guess;
++n
+25	    guess = 0.5 * (guess + n / guess);
++n
+22	  while (fabs(guess - preguess) > 0.0001)
++n
+27	  return guess;
++n
+28	}
++n
+dist (a=..., b=..., res=0x60feec)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c:36
+36	}
++p res
+$3 = (float *) 0x60feec
++p *res
+$4 = 1
++p &res
+$5 = (float **) 0x60fed0
++p res
+$6 = (float *) 0x60feec
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c:49
+49	  output(x, y, dista);
++n
+50	  return 0;
++n
+51	}
++n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 16092) exited normally]
++q
