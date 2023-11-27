@@ -9,10 +9,10 @@ int input(int x)
 }
 float borga_x(int x)
 {
-   float s[x],d[x];
+   float 
    for(int i=0;i<x;i++)
    {
-     s[i]=pow(x,i);
+     
    }
   
 }
