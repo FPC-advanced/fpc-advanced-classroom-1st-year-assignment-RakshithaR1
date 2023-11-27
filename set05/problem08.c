@@ -29,11 +29,7 @@ void find_camel_weight(int n, Camel c[n])
     const float pi = 3.1415;
     float cu = 0;
     float preguess = c[i].height * c[i].length, guess;
-    while (fabs(guess - preguess) > 0.0001)
-    {
-      preguess = guess;
-      guess = 0.5 * (guess + (c[i].height * c[i].length) / guess);
-    }
+    guess=sqrt(preguess);
     cu = c[i].radius * c[i].radius * c[i].radius;
     c[i].weight = pi * cu * guess;
   }
