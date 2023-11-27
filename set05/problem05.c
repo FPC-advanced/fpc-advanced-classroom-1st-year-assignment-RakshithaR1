@@ -14,7 +14,10 @@ float borga_x(int x)
    {
      s[i]=pow(x,i);
    }
-   for(int j=0;)
+   for(int j=0;j<x;j++)
+   {
+    
+   }
 }
 void output(int x,float result)
 {
