@@ -4,3 +4,25 @@ Breakpoint 1 at 0x401455: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-
 Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05/./problem01.exe 
 [New Thread 16148.0x40d0]
 [New Thread 16148.0x5f74]
+
+Breakpoint 1, dist (a=..., b=..., res=0x60feec)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c:20
+20	  c = b.x - a.x;
++n
+21	  d = b.y - a.y;
++p c
+$1 = 1
++n
+22	  sqr = (c * c) + (d * d);
++p d
+$2 = 1
++n
+23	  int guess = sqr, preguess;
++p sqr
+$3 = 2
++n
+24	  while (fabs(guess - preguess) > 0.0001)
++n
+26	    preguess = guess;
++n
+27	    guess = 0.5 * (guess + sqr / guess);
