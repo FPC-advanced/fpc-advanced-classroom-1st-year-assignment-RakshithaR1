@@ -1,0 +1,43 @@
++b 12
+Breakpoint 1 at 0x401469: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem04.c, line 12.
++b 27
+Breakpoint 2 at 0x4014b1: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem04.c, line 27.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05/./problem04.exe 
+[New Thread 12688.0x581c]
+[New Thread 12688.0x5830]
+
+Breakpoint 1, find_mood (radius=1, height=1, length=1)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem04.c:14
+14	  if (radius < height && radius < length)
++n
+18	  else if (length < height)
++n
+24	    return 1;
++n
+26	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem04.c:48
+48	  output(r, h, l, m);
++n
+
+Breakpoint 2, output (radius=1, height=1, length=1, mood=1)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem04.c:29
+29	  if (mood < 0)
++n
+33	  else if (mood == 0)
++n
+39	    printf("The Camel is Happy");
++n
+41	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem04.c:49
+49	  return 0;
++n
+50	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 12688) exited normally]
++q
