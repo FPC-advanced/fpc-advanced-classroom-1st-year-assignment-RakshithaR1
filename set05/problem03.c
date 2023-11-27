@@ -21,7 +21,7 @@ Camel input()
 }
 void find_weight(Camel *c)
 {
-  float preguess = c->height * c->length, sq;
+  float preguess = c->height * c->length, sq, guess;
    guess=sqrt(preguess);
   sq = c->radius * c->radius * c->radius;
   c->weight = 3.1415 * sq * guess;
