@@ -185,3 +185,32 @@ A debugging session is active.
 	Inferior 1 [process 34500] will be killed.
 
 Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
++b 25
+Breakpoint 1 at 0x40151a: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem08.c, line 25.
++b 8
+Breakpoint 2 at 0x401406: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem08.c, line 8.
++n
+The program is not being run.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05/./problem08.exe 
+[New Thread 9264.0x785c]
+[New Thread 9264.0x8990]
+
+Breakpoint 2, input (n=8, c=0x60f8b8, truck_weight=0x60f8b4)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem08.c:10
+warning: Source file is more recent than executable.
+10	  printf("Enter the number of camels: \n");
++n
+11	  scanf("%d", &n);
++n
+12	  for (int i = 0; i < n; i++)
++n
+14	    printf("Enter the height of camel no. %d:\n", i + 1);
++n
+15	    scanf("%f", &c[i].height);
++q
+A debugging session is active.
+
+	Inferior 1 [process 9264] will be killed.
+
+Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
