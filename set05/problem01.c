@@ -24,7 +24,15 @@ void dist(Point a, Point b, float *res)
   sqr = (c * c) + (d * d);
  *res = ;
 }
-
+int square(float n)
+{
+   int guess = sqr, preguess;
+  while (fabs(guess - preguess) > 0.0001)
+  {
+    preguess = guess;
+    guess = 0.5 * (guess + sqr / guess);
+  }
+}
 void output(Point a, Point b, float res)
 {
   printf("The Distance between (%.1f,%.1f) and (%.1f,%.1f) is %.1f", a.x, a.y, b.x, b.y, res);
