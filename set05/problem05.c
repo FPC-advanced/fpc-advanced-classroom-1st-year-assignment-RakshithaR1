@@ -8,7 +8,7 @@ int input(int x)
 }
 float borga_x(int x)
 {
-   float s;
+   float s[100];
    for(int i=1;i<=x;i++)
    {
      
