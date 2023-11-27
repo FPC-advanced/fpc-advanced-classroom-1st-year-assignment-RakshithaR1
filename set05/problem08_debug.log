@@ -68,3 +68,39 @@ A debugging session is active.
 	Inferior 1 [process 15080] will be killed.
 
 Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
++info b
+No breakpoints or watchpoints.
++b 23
+Breakpoint 1 at 0x4014fe: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem08.c, line 23.
++b 37
+Breakpoint 2 at 0x4015cd: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem08.c, line 37.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05/./problem08.exe 
+[New Thread 35964.0x8a68]
+[New Thread 35964.0xab0]
+
+Breakpoint 1, input (n=3, c=0x60f8b8, truck_weight=0x60f8b4)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem08.c:23
+warning: Source file is more recent than executable.
+23	  scanf("%f", truck_weight);
++r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05/./problem08.exe 
+[New Thread 27364.0x91a8]
+[New Thread 27364.0x1fd0]
+
+Breakpoint 1, input (n=3, c=0x60f8b8, truck_weight=0x60f8b4)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem08.c:23
+23	  scanf("%f", truck_weight);
++n
+24	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem08.c:56
+56	  find_camel_weight(n, c);
++q
+A debugging session is active.
+
+	Inferior 1 [process 27364] will be killed.
+
+Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
