@@ -121,3 +121,67 @@ warning: Source file is more recent than executable.
 27	  for (int i = 0; i < n; i++)
 +p n
 $1 = 8
++p c[0]
+$2 = {radius = 1, height = 1, length = 1, weight = 0}
++p c[1]
+$3 = {radius = 1, height = 1, length = 1, weight = 0}
++p c[2]
+$4 = {radius = 1, height = 1, length = 1, weight = 0}
++p c[3]
+$5 = {radius = 1.03223232e-038, height = 2.7353346e-042, length = 9.2668428e-040, weight = 3.20850265e-039}
++n
+29	    const float pi = 3.1415;
++n
+30	    float cu = 0;
++n
+31	    float preguess = c[i].height * c[i].length, guess;
++n
+32	    guess=sqrt(preguess);
++n
+33	    cu = c[i].radius * c[i].radius * c[i].radius;
++n
+34	    c[i].weight = pi * cu * guess;
++n
+27	  for (int i = 0; i < n; i++)
++p c[0]
+$6 = {radius = 1, height = 1, length = 1, weight = 3.1415}
++n
+29	    const float pi = 3.1415;
++n
+30	    float cu = 0;
++n
+31	    float preguess = c[i].height * c[i].length, guess;
++n
+32	    guess=sqrt(preguess);
++n
+33	    cu = c[i].radius * c[i].radius * c[i].radius;
++n
+34	    c[i].weight = pi * cu * guess;
++n
+27	  for (int i = 0; i < n; i++)
++p c[1]
+$7 = {radius = 1, height = 1, length = 1, weight = 3.1415}
++n
+29	    const float pi = 3.1415;
++n
+30	    float cu = 0;
++n
+31	    float preguess = c[i].height * c[i].length, guess;
++n
+32	    guess=sqrt(preguess);
++n
+33	    cu = c[i].radius * c[i].radius * c[i].radius;
++n
+34	    c[i].weight = pi * cu * guess;
++n
+27	  for (int i = 0; i < n; i++)
++n
+29	    const float pi = 3.1415;
++n
+30	    float cu = 0;
++q
+A debugging session is active.
+
+	Inferior 1 [process 34500] will be killed.
+
+Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
