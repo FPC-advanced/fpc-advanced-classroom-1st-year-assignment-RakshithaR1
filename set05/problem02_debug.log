@@ -40,3 +40,39 @@ Single stepping until exit from function __mingw_CRTStartup,
 which has no line number information.
 [Inferior 1 (process 37120) exited normally]
 +q
++b 13
+Breakpoint 1 at 0x40146c: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem02.c, line 13.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05/./problem02.exe 
+[New Thread 34556.0x93dc]
+[New Thread 34556.0x30d8]
+
+Breakpoint 1, find_weight (radius=1, height=1, length=1)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem02.c:16
+16	  we = height * length;
++n
+17	  float guess = sqrt(we);
++n
+18	  sq = radius * radius * radius;
++p guess
+$1 = 1
++n
+19	  return (22/7) * sq * guess;
++p 22/7
+$2 = 3
++n
+20	guess;
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem02.c:30
+30	h, l);
++n
+31	l, w);
++n
+32	urn 0;
++n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 34556) exited normally]
++q
