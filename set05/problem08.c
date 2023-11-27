@@ -7,7 +7,7 @@ typedef struct _camel
 } Camel;
 void input(int n, Camel c[n], float *truck_weight)
 {
-  int 
+  int *a;
   printf("Enter the number of camels: \n");
   scanf("%d",&n);
   for (int i = 0; i < n; i++)
@@ -22,6 +22,7 @@ void input(int n, Camel c[n], float *truck_weight)
   }
   printf("Enter the weight of the truck: ");
   scanf("%f", truck_weight);
+  a=n;
 }
 void find_camel_weight(int n, Camel c[n])
 {
