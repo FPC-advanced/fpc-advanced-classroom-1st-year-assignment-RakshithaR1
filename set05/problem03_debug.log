@@ -1,0 +1,28 @@
++b 22
+Breakpoint 1 at 0x401493: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem03.c, line 22.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05/./problem03.exe 
+[New Thread 11168.0x4f18]
+[New Thread 11168.0x2f2c]
+
+Breakpoint 1, find_weight (c=0x60fef0)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem03.c:24
+24	  float guess = c->height * c->length, preguess, sq;
++n
+25	  while (fabs(guess - preguess) > 0.0001)
++p guess
+$1 = 1
++n
+27	    preguess = guess;
++n
+28	    guess = 0.5 * (guess + (c->height * c->length) / guess);
++p preguess
+$2 = 1
++n
+25	  while (fabs(guess - preguess) > 0.0001)
++n
+30	  sq = c->radius * c->radius * c->radius;
++n
+31	  c->weight = 3.1415 * sq * guess;
++p sq
+$3 = 1
