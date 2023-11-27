@@ -26,3 +26,21 @@ $2 = 1
 31	  c->weight = 3.1415 * sq * guess;
 +p sq
 $3 = 1
++n
+32	}
++p c.weight
+$4 = 3.1415
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem03.c:42
+42	  output(c);
++n
+43	  return 0;
++n
+44	}
++n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 11168) exited normally]
++q
