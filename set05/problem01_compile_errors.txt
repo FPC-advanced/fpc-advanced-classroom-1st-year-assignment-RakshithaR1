@@ -96,3 +96,19 @@ c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-ass
 Compilation finished at 11/27/2023, 9:31:03 AM
 Compilation started at 11/27/2023, 9:33:46 AM
 Compilation finished at 11/27/2023, 9:33:47 AM
+Compilation started at 11/27/2023, 9:35:32 AM
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c: In function 'dist':
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c:25:9: warning: implicit declaration of function 'square' [-Wimplicit-function-declaration]
+  *res = square(sqr);
+         ^~~~~~
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c: At top level:
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c:27:5: error: conflicting types for 'square'
+ int square(float n)
+     ^~~~~~
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c:28:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+ {
+ ^
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c:25:9: note: previous implicit declaration of 'square' was here
+  *res = square(sqr);
+         ^~~~~~
+Compilation finished at 11/27/2023, 9:35:33 AM

@@ -22,7 +22,7 @@ void dist(Point a, Point b, float *res)
   c = b.x - a.x;
   d = b.y - a.y;
   sqr = (c * c) + (d * d);
- *res = square();
+ *res = square(sqr);
 }
 int square(float n)
 {
