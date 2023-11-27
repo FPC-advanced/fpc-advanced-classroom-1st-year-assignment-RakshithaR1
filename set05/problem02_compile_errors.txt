@@ -68,3 +68,11 @@ Compilation started at 11/27/2023, 9:54:33 AM
 Compilation finished at 11/27/2023, 9:54:34 AM
 Compilation started at 11/27/2023, 9:55:47 AM
 Compilation finished at 11/27/2023, 9:55:49 AM
+Compilation started at 11/27/2023, 9:56:01 AM
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem02.c: In function 'find_weight':
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem02.c:19:9: warning: type defaults to 'int' in declaration of 'pi' [-Wimplicit-int]
+   const pi= 3.1415;
+         ^~
+Compilation finished at 11/27/2023, 9:56:02 AM
+Compilation started at 11/27/2023, 9:56:19 AM
+Compilation finished at 11/27/2023, 9:56:20 AM
