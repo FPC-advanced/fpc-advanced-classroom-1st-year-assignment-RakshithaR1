@@ -17,11 +17,14 @@ float borga_x(int x)
    for(int y=1;y<x;y++)
    {
      fac=1;
+     if(y%2!=0)
+     {
      for(int a=1;a<=y;a++)
      {
        fac *= a;
      }
-
+     }
+     f[y-1]=fac;
    }
    for(int j=0;j<x;j++)
    {
@@ -29,12 +32,22 @@ float borga_x(int x)
      {
       for(int z=0;z<x;z++)
       {
-        sum += (s[z]);
+        sum += (s[z]/f[z]);
       }
      }
    }
+   return sum;
 }
 void output(int x,float result)
 {
-  
+  printf("borga(%d)= %f",x,result);
+}
+int main()
+{
+  int a;
+  float res;
+  a=input(a);
+  res=borga_x(a);
+  output(a,res);
+  return 0;
 }
