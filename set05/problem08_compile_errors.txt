@@ -12,3 +12,20 @@ Compilation started at 11/27/2023, 10:31:42 AM
 Compilation finished at 11/27/2023, 10:31:43 AM
 Compilation started at 11/27/2023, 10:37:05 AM
 Compilation finished at 11/27/2023, 10:37:06 AM
+Compilation started at 11/27/2023, 2:57:52 PM
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem08.c: In function 'input':
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem08.c:12:21: warning: comparison between pointer and integer
+   for (int i = 0; i < n; i++)
+                     ^
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem08.c: In function 'main':
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem08.c:55:13: warning: passing argument 2 of 'input' from incompatible pointer type [-Wincompatible-pointer-types]
+   input(&n, c, &truckweight);
+             ^
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem08.c:8:6: note: expected 'Camel ** {aka struct _camel **}' but argument is of type 'Camel * {aka struct _camel *}'
+ void input(int *n, Camel *c[*n], float *truck_weight)
+      ^~~~~
+Compilation finished at 11/27/2023, 2:57:53 PM
+Compilation started at 11/27/2023, 3:00:34 PM
+Compilation finished at 11/27/2023, 3:00:35 PM
+Compilation started at 11/27/2023, 3:01:10 PM
+Compilation finished at 11/27/2023, 3:01:11 PM
