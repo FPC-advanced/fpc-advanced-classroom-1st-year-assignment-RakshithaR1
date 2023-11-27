@@ -22,16 +22,17 @@ void dist(Point a, Point b, float *res)
   c = b.x - a.x;
   d = b.y - a.y;
   sqr = (c * c) + (d * d);
- *res = ;
+ *res = square();
 }
 int square(float n)
 {
-   int guess = sqr, preguess;
+   int guess = n, preguess;
   while (fabs(guess - preguess) > 0.0001)
   {
     preguess = guess;
-    guess = 0.5 * (guess + sqr / guess);
+    guess = 0.5 * (guess + n / guess);
   }
+  return guess;
 }
 void output(Point a, Point b, float res)
 {
