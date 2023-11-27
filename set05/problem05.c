@@ -16,7 +16,10 @@ float borga_x(int x)
    }
    for(int y=1;y<x;y++)
    {
-     
+     for(int a=1;a<=y;a++)
+     {
+      
+     }
    }
    for(int j=0;j<x;j++)
    {
