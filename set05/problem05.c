@@ -20,7 +20,7 @@ float borga_x(int x)
      {
       for(int z=0;z<x;z++)
       {
-        
+        sum += ()
       }
      }
    }
