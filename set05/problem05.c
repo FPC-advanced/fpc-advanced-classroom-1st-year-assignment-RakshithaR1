@@ -10,7 +10,7 @@ int input(int x)
 float borga_x(int x)
 {
    float sum;
-   for(int i=0;i<x;i++)
+   for(int i=1;i<x;i++)
    {
      
    }
