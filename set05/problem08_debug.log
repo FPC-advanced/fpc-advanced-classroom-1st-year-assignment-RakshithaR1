@@ -36,3 +36,5 @@ Breakpoint 1, find_camel_weight (n=8, c=0x60f8b8)
 27	  for (int i = 0; i < n; i++)
 +p c[i].weight
 $1 = 0
++p c[0]
+$2 = {radius = 8.90558245e-039, height = 1, length = 1, weight = 0}
