@@ -38,3 +38,10 @@ Breakpoint 1, find_camel_weight (n=8, c=0x60f8b8)
 $1 = 0
 +p c[0]
 $2 = {radius = 8.90558245e-039, height = 1, length = 1, weight = 0}
++p c[0].weight
+$3 = 0
++r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05/./problem08.exe 
+[New Thread 30224.0x76a0]
