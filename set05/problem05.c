@@ -9,12 +9,15 @@ int input(int x)
 }
 float borga_x(int x)
 {
-   float s[x],sum=0.0;
+   float s[x],sum=0.0,fac;
    for(int i=0;i<x;i++)
    {
      s[i]=pow(x,i);
    }
-   for(int y=0;y<x)
+   for(int y=1;y<x;y++)
+   {
+      
+   }
    for(int j=0;j<x;j++)
    {
      if(j%2!=0)
