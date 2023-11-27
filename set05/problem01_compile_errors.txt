@@ -112,3 +112,16 @@ c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-ass
   *res = square(sqr);
          ^~~~~~
 Compilation finished at 11/27/2023, 9:35:33 AM
+Compilation started at 11/27/2023, 9:35:58 AM
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c: In function 'dist':
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c:25:9: warning: implicit declaration of function 'square' [-Wimplicit-function-declaration]
+  *res = square(sqr);
+         ^~~~~~
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c: At top level:
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c:27:7: error: conflicting types for 'square'
+ float square(float n)
+       ^~~~~~
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem01.c:25:9: note: previous implicit declaration of 'square' was here
+  *res = square(sqr);
+         ^~~~~~
+Compilation finished at 11/27/2023, 9:35:59 AM

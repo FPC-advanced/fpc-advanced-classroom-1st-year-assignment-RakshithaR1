@@ -24,7 +24,7 @@ void dist(Point a, Point b, float *res)
   sqr = (c * c) + (d * d);
  *res = square(sqr);
 }
-int square(float n)
+float square(float n)
 {
    int guess = n, preguess;
   while (fabs(guess - preguess) > 0.0001)
