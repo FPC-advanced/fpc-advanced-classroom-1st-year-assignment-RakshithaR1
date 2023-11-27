@@ -9,17 +9,19 @@ int input(int x)
 }
 float borga_x(int x)
 {
-   float s[x],sum=0.0,fac;
+   float s[x],sum=0.0,fac,f[x];
    for(int i=0;i<x;i++)
    {
      s[i]=pow(x,i);
    }
    for(int y=1;y<x;y++)
    {
+     fac=1;
      for(int a=1;a<=y;a++)
      {
-      
+       fac *= a;
      }
+
    }
    for(int j=0;j<x;j++)
    {
