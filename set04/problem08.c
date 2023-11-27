@@ -75,7 +75,7 @@ void output(int n, Fraction f[n], Fraction sum)
 {
   for(int i=0;i<n;i++)
   {
-    printf("%d/%d",f[i].num,f[i].den);
+    printf("%d/%d", f[i].num,f[i].den);
     if(i<n-1)
     {
       printf(" + ");
@@ -83,7 +83,7 @@ void output(int n, Fraction f[n], Fraction sum)
     }
 
   }
-  printf(" =%d/%d",sum.num,sum.den);
+  printf(" =%d/%d", sum.num,sum.den);
 }
 int main()
 {
