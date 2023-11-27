@@ -16,7 +16,7 @@ float borga_x(int x)
    }
    for(int y=1;y<x;y++)
    {
-      
+     
    }
    for(int j=0;j<x;j++)
    {
@@ -24,7 +24,7 @@ float borga_x(int x)
      {
       for(int z=0;z<x;z++)
       {
-        sum += (s[z]/)
+        sum += (s[z]);
       }
      }
    }
