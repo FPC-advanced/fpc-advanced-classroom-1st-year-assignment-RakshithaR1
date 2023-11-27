@@ -1,2 +1,42 @@
 +b 13
 Breakpoint 1 at 0x40146c: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem02.c, line 13.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05/./problem02.exe 
+[New Thread 37120.0x8818]
+[New Thread 37120.0x7d0c]
+
+Breakpoint 1, find_weight (radius=1, height=1, length=1)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem02.c:16
+warning: Source file is more recent than executable.
+16	  we = height * length;
++n
+17	  float guess = sqrt(we);
++p we
+$1 = 1
++n
+18	  sq = radius * radius * radius;
++p guess
+$2 = 1
++p sq
+$3 = 8.90766197e-039
++n
+19	  return 3.1415 * sq * guess;
++p sq
+$4 = 1
++n
+20	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem02.c:30
+30	  output(r, h, l, w);
++p w
+$5 = 3.1415
++n
+31	  return 0;
++n
+32	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 37120) exited normally]
++q
