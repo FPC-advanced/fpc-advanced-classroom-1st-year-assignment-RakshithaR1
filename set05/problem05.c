@@ -28,7 +28,7 @@ float borga_x(int x)
        
         }
          f[q] = fac;
-         q++;
+         
     }
   }
   for (int j = 0; j < x; j++)
