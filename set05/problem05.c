@@ -36,6 +36,7 @@ float borga_x(int x)
    
    return sum;
 }
+}
 void output(int x,float result)
 {
   printf("borga(%d)= %f",x,result);
