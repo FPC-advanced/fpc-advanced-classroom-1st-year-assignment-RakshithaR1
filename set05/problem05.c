@@ -22,9 +22,10 @@ float borga_x(int x)
       for (int a = 1; a <= y; a++)
       {
         fac *= a;
+        f[y - 1] = fac;
       }
     }
-    f[y - 1] = fac;
+    
   }
   for (int j = 0; j < x; j++)
   {
