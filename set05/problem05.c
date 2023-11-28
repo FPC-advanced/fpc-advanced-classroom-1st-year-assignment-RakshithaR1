@@ -9,7 +9,8 @@ int input(int x)
 }
 float borga_x(int x)
 {
-  float s[x], sum = 0.0, fac, f[x], g[x];
+  float s[x], sum = 0.0, fac, f[x];
+  int q=0;
   for (int i = 0; i < x; i++)
   {
     s[i] = pow(x, i);
@@ -19,7 +20,7 @@ float borga_x(int x)
     fac = 1;
     if (y % 2 != 0)
     {
-    
+       
         for (int a = 1; a <= y; a++)
         {
           fac *= a;
