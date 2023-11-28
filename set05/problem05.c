@@ -25,12 +25,13 @@ float borga_x(int x)
       {
         fac *= a;
       }
-    }
-    for (q; q < x; q++)
+      for (q; q < x; q++)
     {
       f[q] = fac;
       break;
     }
+    }
+    
   }
 
   for (int j = 0; j < x; j++)
