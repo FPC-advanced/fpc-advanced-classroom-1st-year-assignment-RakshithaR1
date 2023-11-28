@@ -14,7 +14,9 @@ int sub_str_index(char *string, char *substring)
   {
     if(string[j]==substring[0])
     {
-      
+      int i=j;
+      for(int k=0;substring[k])
+      while(string[j])
     }
   }
 }
