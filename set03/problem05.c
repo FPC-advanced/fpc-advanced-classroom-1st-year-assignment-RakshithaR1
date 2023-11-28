@@ -16,15 +16,18 @@ void init_array(int n, int a[n])
 }
 void erotosthenes_sieve(int n, int a[n])
 {
-  for (int i = 2; i * i <= n; i++)
+  int i=2,j=i+i;
+  while(i*i<=n)
   {
-    if (a[i] == 1)
+    if(a[i]==1)
     {
-      for (int j = i * i; j <= n; j += i)
+      while(j<=n)
       {
-        a[j] = 0;
+        a[j]=0;
+        j +=i;
       }
     }
+    i++;
   }
 }
 void output(int n, int a[n])
