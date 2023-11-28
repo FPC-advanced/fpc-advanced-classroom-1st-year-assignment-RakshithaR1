@@ -28,14 +28,12 @@ float borga_x(int x)
    }
    for(int j=0;j<x;j++)
    {
-     if(j%2!=0)
-     {
-      for(int z=0;z<x;z++)
-      {
-        sum += (s[z]/f[z]);
-      }
-     }
-   }
+     
+    
+        sum += (s[j]/f[j]);
+      
+     
+   
    return sum;
 }
 void output(int x,float result)
