@@ -19,8 +19,7 @@ float borga_x(int x)
     fac = 1;
     if (y % 2 != 0)
     {
-      for (int q = 0; q < x; q++)
-      {
+    
         for (int a = 1; a <= y; a++)
         {
           fac *= a;
