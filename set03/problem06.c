@@ -10,15 +10,9 @@ void input_string(char *a, char *b)
 int sub_str_index(char *string, char *substring)
 {
 
-  for (int j = 0; substring[j] != '\0'; j++)
+  for (int j = 0;string[j] != '\0'; j++)
   {
-    for(int i=0;string[i]!='\0';i++)
-    {
-      if(string[i]==substring[j])
-      {
-        
-      }
-    }
+    if(string)
   }
 }
 void output(char *string, char *substring, int index)
