@@ -28,7 +28,7 @@ float borga_x(int x)
   }
   for (int j = 0; j < x; j++)
   {
-
+    
     sum += (s[j] / f[j]);
 
     return sum;
