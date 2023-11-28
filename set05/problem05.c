@@ -26,7 +26,7 @@ float borga_x(int x)
           fac *= a;
         }
         f[q] = fac;
-        break;
+        
       }
     }
   }
