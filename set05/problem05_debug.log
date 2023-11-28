@@ -148,3 +148,173 @@ A debugging session is active.
 	Inferior 1 [process 34104] will be killed.
 
 Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
++b 10
+Breakpoint 1 at 0x401431: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem05.c, line 10.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05/./problem05.exe 
+[New Thread 11656.0x296c]
+[New Thread 11656.0x44f4]
+
+Breakpoint 1, borga_x (x=5)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem05.c:11
+11	{
++n
+12	  float s[x], sum = 0.0, fac, f[x];
++n
+13	  for (int i = 0; i < x; i++)
++n
+15	    s[i] = pow(x, i);
++n
+13	  for (int i = 0; i < x; i++)
++n
+15	    s[i] = pow(x, i);
++n
+13	  for (int i = 0; i < x; i++)
++n
+15	    s[i] = pow(x, i);
++n
+13	  for (int i = 0; i < x; i++)
++n
+15	    s[i] = pow(x, i);
++p s[0]
+$1 = 1
++p s[1]
+$2 = 5
++p s[2]
+$3 = 25
++n
+13	  for (int i = 0; i < x; i++)
++n
+15	    s[i] = pow(x, i);
++n
+13	  for (int i = 0; i < x; i++)
++p s[3]
+$4 = 125
++p s[4]
+$5 = 625
++n
+17	  for (int y = 1; y <=x; y++)
++n
+19	    fac = 1;
++n
+20	    if (y % 2 != 0)
++n
+22	      for (int a = 1; a <= y; a++)
++n
+24	        fac *= a;
++n
+22	      for (int a = 1; a <= y; a++)
++n
+27	    f[y - 1] = fac;
++n
+17	  for (int y = 1; y <=x; y++)
++p f[0]
+$6 = 1
++n
+19	    fac = 1;
++n
+20	    if (y % 2 != 0)
++p fac
+$7 = 1
++n
+27	    f[y - 1] = fac;
++n
+17	  for (int y = 1; y <=x; y++)
++p f[1]
+$8 = 1
++n
+19	    fac = 1;
++n
+20	    if (y % 2 != 0)
++n
+22	      for (int a = 1; a <= y; a++)
++n
+24	        fac *= a;
++n
+22	      for (int a = 1; a <= y; a++)
++n
+24	        fac *= a;
++n
+22	      for (int a = 1; a <= y; a++)
++n
+24	        fac *= a;
++n
+22	      for (int a = 1; a <= y; a++)
++n
+27	    f[y - 1] = fac;
++n
+17	  for (int y = 1; y <=x; y++)
++p f[2]
+$9 = 6
++n
+19	    fac = 1;
++n
+20	    if (y % 2 != 0)
++n
+27	    f[y - 1] = fac;
++n
+17	  for (int y = 1; y <=x; y++)
++n
+19	    fac = 1;
++n
+20	    if (y % 2 != 0)
++n
+22	      for (int a = 1; a <= y; a++)
++n
+24	        fac *= a;
++n
+22	      for (int a = 1; a <= y; a++)
++n
+24	        fac *= a;
++n
+22	      for (int a = 1; a <= y; a++)
++n
+24	        fac *= a;
++n
+22	      for (int a = 1; a <= y; a++)
++n
+24	        fac *= a;
++n
+22	      for (int a = 1; a <= y; a++)
++n
+24	        fac *= a;
++n
+22	      for (int a = 1; a <= y; a++)
++n
+27	    f[y - 1] = fac;
++n
+17	  for (int y = 1; y <=x; y++)
++n
+29	  for (int j = 0; j < x; j++)
++n
+32	    sum += (s[j] / f[j]);
++p f[0]
+$10 = 1
++p f[1]
+$11 = 1
++p f[2]
+$12 = 6
++p f[3]
+$13 = 1
++p f[4]
+$14 = 120
++p f[5]
+$15 = 1.07750208e+033
++n
+34	
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem05.c:47
+47	);
++n
+48	);
++n
+49	0;
++n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 11656) exited normally]
++n
+The program is not being run.
++q
