@@ -2,3 +2,11 @@ Compilation started at 11/27/2023, 10:32:08 PM
 Compilation finished at 11/27/2023, 10:32:09 PM
 Compilation started at 11/28/2023, 9:14:46 AM
 Compilation finished at 11/28/2023, 9:14:47 AM
+Compilation started at 11/28/2023, 9:15:19 AM
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem05.c: In function 'borga_x':
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set05\problem05.c:17:23: error: expected expression before '=' token
+   for (int y = 1; y < =x; y++)
+                       ^
+Compilation finished at 11/28/2023, 9:15:20 AM
+Compilation started at 11/28/2023, 9:15:32 AM
+Compilation finished at 11/28/2023, 9:15:33 AM
