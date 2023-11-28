@@ -9,27 +9,16 @@ int input_array_size()
 }
 void init_array(int n, int a[n])
 {
-  a[0]
+  a[0]=0;
+  a[1]=0;
   for (int i = 2; i <= n; i++)
   {
-    a[i] = 1;
+    a[i] = i;
   }
 }
 void erotosthenes_sieve(int n, int a[n])
 {
-  int i=2;
-  while(i*i<=n)
-  {
-    int j=i*i;
-    if(a[i]==1)
-    {
-      while(j<=n)
-      {
-        a[j]=0;
-        j +=i;
-      }
-    }
-    i++;
+  
   }
 }
 void output(int n, int a[n])
