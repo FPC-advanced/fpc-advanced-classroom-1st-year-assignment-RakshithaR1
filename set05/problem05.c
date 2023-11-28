@@ -28,11 +28,13 @@ float borga_x(int x)
        
         }
         for(q;q<x;q++)
+        {
          f[q] = fac;
-         
+         break;
+        }
     }
   }
-  for (int j = 0; j < x; j++)
+  for(int j = 0; j < x; j++)
   {
 
     sum += (s[j] / f[j]);
