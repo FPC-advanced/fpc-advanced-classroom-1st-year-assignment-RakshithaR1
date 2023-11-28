@@ -21,7 +21,8 @@ void erotosthenes_sieve(int n, int a[n])
   for(int i=2;i<=n;i++)
   {
     int j=i*i;
-    
+    a[j]=0;
+    j+=i;
   }
 }
 void output(int n, int a[n])
