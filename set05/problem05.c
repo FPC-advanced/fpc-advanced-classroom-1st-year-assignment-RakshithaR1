@@ -28,7 +28,7 @@ float borga_x(int x)
     f[y - 1] = fac;
     if(y-1%2==0)
     {
-
+      g[y-1]=
     }
   }
   for (int j = 0; j < x; j++)
