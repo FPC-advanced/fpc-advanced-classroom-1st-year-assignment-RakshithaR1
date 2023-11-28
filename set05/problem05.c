@@ -10,7 +10,7 @@ int input(int x)
 float borga_x(int x)
 {
   float s[x], sum = 0.0, fac, f[x];
-  
+  int q=0;
   for (int i = 0; i < x; i++)
   {
     s[i] = pow(x, i);
@@ -27,7 +27,7 @@ float borga_x(int x)
         }
        
         }
-        for()
+        for(q;q<x;q++)
          f[q] = fac;
          
     }
