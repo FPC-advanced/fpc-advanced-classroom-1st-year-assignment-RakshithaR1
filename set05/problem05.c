@@ -26,8 +26,7 @@ float borga_x(int x)
       }
     }
     f[y - 1] = fac;
-   
-  }
+   }
   for (int j = 0; j < x; j++)
   {
     
