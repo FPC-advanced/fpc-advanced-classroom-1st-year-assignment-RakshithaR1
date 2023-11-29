@@ -30,10 +30,16 @@ int sub_str_index(char *string, char *substring)
     }
     
   }
+  return -1;
 }
 void output(char *string, char *substring, int index)
 {
+  if(index>=0)
+  {
   printf("The index of '%s' in '%s' is %d", substring, string, index);
+  }else{
+    printf("The substring does not exist.");
+  }
 }
 int main()
 {
