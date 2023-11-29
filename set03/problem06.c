@@ -19,8 +19,8 @@ int sub_str_index(char *string, char *substring)
       
       while(string[i]==substring[k]&&substring[k]!='\0')
       {
-        i++;
-        k++;
+        i+=1;
+        k+=1;
         if(string[i]=='\0')
         {
           return j;
