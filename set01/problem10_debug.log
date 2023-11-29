@@ -307,3 +307,56 @@ Single stepping until exit from function __mingw_CRTStartup,
 which has no line number information.
 [Inferior 1 (process 22356) exited normally]
 +q
++b 11
+Breakpoint 1 at 0x40144d: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c, line 11.
++b 19
+Breakpoint 2 at 0x4014b2: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c, line 19.
++info b
+Num     Type           Disp Enb Address    What
+1       breakpoint     keep y   0x0040144d in stringcompare 
+                                           at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c:11
+2       breakpoint     keep y   0x004014b2 in output 
+                                           at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c:19
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01/./problem10.exe 
+[New Thread 16712.0x8a14]
+[New Thread 16712.0x6e1c]
+
+Breakpoint 1, stringcompare (string1=0x60fe98 "hello", string2=0x60fe34 "hello")
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c:13
+13	  int i=0;
++n
+14	  for( i=0;string1[i]==string2[i]&&(string1[i]!='\0');i++);
++p i
+$1 = 0
++n
+15	  return string1[i]-string2[i];
++n
+16	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c:41
+41	  output(string1, string2, result);
++n
+
+Breakpoint 2, output (string1=0x60fe98 "hello", string2=0x60fe34 "hello", result=0)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c:21
+21	  if (result > 0)
++n
+25	  else if (result < 0)
++p result
+$2 = 0
++n
+31	    printf("Both the strings are equal");
++n
+33	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set01\problem10.c:42
+42	  return 0;
++n
+43	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 16712) exited normally]
++q
