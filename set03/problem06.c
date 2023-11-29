@@ -12,12 +12,19 @@ int sub_str_index(char *string, char *substring)
 
   for (int j = 0;string[j] != '\0'; j++)
   {
+    int k=0;
     if(string[j]==substring[0])
     {
       int i=j;
-      for(int k=0;substring[k])
-      while(string[j])
+      
+      while(string[i]==substring[k]&&substring[k]!='\0')
+      {
+        i++;
+        k++;
+      }
+      
     }
+
   }
 }
 void output(char *string, char *substring, int index)
