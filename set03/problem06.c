@@ -23,7 +23,7 @@ int sub_str_index(char *string, char *substring)
         k+=1;
         if(substring[k]=='\0')
         {
-
+          return j;
         }
       }
       
