@@ -21,6 +21,7 @@ int sub_str_index(char *string, char *substring)
       {
         i++;
         k++;
+        if
       }
       
     }
