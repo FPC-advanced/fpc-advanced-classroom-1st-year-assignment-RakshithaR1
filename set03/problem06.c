@@ -21,7 +21,11 @@ int sub_str_index(char *string, char *substring)
       {
         i+=1;
         k+=1;
-         }
+        if(substring[k]=='\0')
+        {
+
+        }
+      }
       
     }
     
