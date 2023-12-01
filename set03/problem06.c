@@ -27,7 +27,7 @@ int sub_str_index(char *string, char *substring)
     {
       
       int k=sos(substring);
-      r=strncmp(string+i,substring,k);
+      r=strncmp(string+j,substring,k);
       if(r==0)
       {
         return j;
