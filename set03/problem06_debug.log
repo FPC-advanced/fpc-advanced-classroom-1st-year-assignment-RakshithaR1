@@ -173,3 +173,144 @@ $10 = 100 'd'
 20	      while(string[i]==substring[k]&&substring[k]!='\0')
 +n
 13	  for (int j = 0;string[j] != '\0'; j++)
++b 11
+Breakpoint 1 at 0x40144d: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem06.c, line 11.
++b 20
+Breakpoint 2 at 0x401474: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem06.c, line 20.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03/./problem06.exe 
+[New Thread 1492.0x16b8]
+[New Thread 1492.0xb0a0]
+
+Breakpoint 2, sub_str_index (string=0x60fe98 "helloworldhello", substring=0x60fe34 "world")
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem06.c:23
+23	  for (int j = 0;string[j] != '\0'; j++)
++n
+26	    if(string[j]==substring[0])
++n
+23	  for (int j = 0;string[j] != '\0'; j++)
++n
+26	    if(string[j]==substring[0])
++n
+23	  for (int j = 0;string[j] != '\0'; j++)
++n
+26	    if(string[j]==substring[0])
++n
+23	  for (int j = 0;string[j] != '\0'; j++)
++n
+26	    if(string[j]==substring[0])
++n
+23	  for (int j = 0;string[j] != '\0'; j++)
++n
+26	    if(string[j]==substring[0])
++n
+23	  for (int j = 0;string[j] != '\0'; j++)
++n
+26	    if(string[j]==substring[0])
++n
+28	      int i=j-1;
++p i
+$1 = 4
++q
+A debugging session is active.
+
+	Inferior 1 [process 1492] will be killed.
+
+Quit anyway? (y or n) Not confirmed.
++r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) Program not restarted.
++n
+29	      int k=sos(substring);
++n
+
+Breakpoint 1, sos (substring=0x60fe34 "world")
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem06.c:13
+13	  int i=0;
++n
+14	  while(substring[i]!='\0')
++n
+16	    i++;
++n
+14	  while(substring[i]!='\0')
++n
+16	    i++;
++n
+14	  while(substring[i]!='\0')
++n
+16	    i++;
++p i
+$2 = 2
++n
+14	  while(substring[i]!='\0')
++n
+16	    i++;
++n
+14	  while(substring[i]!='\0')
++n
+16	    i++;
++n
+14	  while(substring[i]!='\0')
++n
+18	  return i;
++n
+19	}
++p i
+$3 = 5
++n
+sub_str_index (string=0x60fe98 "helloworldhello", substring=0x60fe34 "world")
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem06.c:30
+30	      r=strncmp(string+i,substring,k);
++n
+31	      if(r==0)
++n
+23	  for (int j = 0;string[j] != '\0'; j++)
++n
+26	    if(string[j]==substring[0])
++n
+23	  for (int j = 0;string[j] != '\0'; j++)
++n
+26	    if(string[j]==substring[0])
++n
+23	  for (int j = 0;string[j] != '\0'; j++)
++n
+26	    if(string[j]==substring[0])
++n
+23	  for (int j = 0;string[j] != '\0'; j++)
++n
+26	    if(string[j]==substring[0])
++n
+23	  for (int j = 0;string[j] != '\0'; j++)
++n
+26	    if(string[j]==substring[0])
++n
+23	  for (int j = 0;string[j] != '\0'; j++)
++n
+26	    if(string[j]==substring[0])
++n
+23	  for (int j = 0;string[j] != '\0'; j++)
++n
+26	    if(string[j]==substring[0])
++n
+23	  for (int j = 0;string[j] != '\0'; j++)
++n
+26	    if(string[j]==substring[0])
++n
+23	  for (int j = 0;string[j] != '\0'; j++)
++n
+26	    if(string[j]==substring[0])
++n
+23	  for (int j = 0;string[j] != '\0'; j++)
++n
+37	   return -1;   
++n
+38	 }
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set03\problem06.c:55
+55	  output(a, b, n);
++q
+A debugging session is active.
+
+	Inferior 1 [process 1492] will be killed.
+
+Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
