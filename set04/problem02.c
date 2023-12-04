@@ -19,7 +19,7 @@ Fraction comp(Fraction a, Fraction b)
   }
   else
   {
-    return a;
+    return b;
   }
 }
 Fraction smallest(Fraction a, Fraction b, Fraction c)
