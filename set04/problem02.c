@@ -17,11 +17,11 @@ Fraction smallest(Fraction a, Fraction b, Fraction c)
   p = a.num / a.den;
   q = b.num / b.den;
   r = c.num / c.den;
-  if (a.num/a.den < b.num/b.den && a.num/.den < r)
+  if (a.num/a.den < b.num/b.den && a.num/a.den < c.num/c.den)
   {
     return a;
   }
-  else if (q < r)
+  else if (b.num/b.den < c.num/c.den)
   {
     return b;
   }
