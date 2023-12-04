@@ -11,19 +11,20 @@ Fraction input()
   scanf("%d %d", &a.num, &a.den);
   return a;
 }
-Fraction comp(Fraction a,Fraction b)
+Fraction comp(Fraction a, Fraction b)
 {
-  if(a.num*b.den>a.den*b.num)
+  if (a.num * b.den > a.den * b.num)
   {
     return b;
-  }else{
+  }
+  else
+  {
     return a;
   }
-
 }
 Fraction smallest(Fraction a, Fraction b, Fraction c)
 {
-  return comp(comp(a,b),c);
+  return comp(comp(a, b), c);
 }
 void output(Fraction a, Fraction b, Fraction c, Fraction small)
 {
