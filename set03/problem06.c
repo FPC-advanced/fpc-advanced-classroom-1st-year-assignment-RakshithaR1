@@ -31,6 +31,7 @@ int sub_str_index(char *string, char *substring)
   int r;
   int s=str_size(string);
   int k = sub_size(substring);
+  
   for (int j = 0; string[j] != '\0'&&string[s]>=substring[k]; j++)
   {
 
