@@ -46,3 +46,31 @@ A debugging session is active.
 	Inferior 1 [process 18396] will be killed.
 
 Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
++b 14
+Breakpoint 1 at 0x40143b: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem02.c, line 14.
++n
+The program is not being run.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04/./problem02.exe 
+[New Thread 29412.0xa240]
+[New Thread 29412.0x946c]
+
+Breakpoint 1, smallest (a=..., b=..., c=...)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem02.c:17
+17	  if (a.num / a.den < b.num / b.den && a.num / a.den < c.num / c.den)
++p a
+$1 = {num = 1, den = 2}
++p b
+$2 = {num = 1, den = 3}
++p c
+$3 = {num = 1, den = 4}
++n
+21	  else if (b.num / b.den < c.num / c.den)
++p a.num/a.den
+$4 = 0
++q
+A debugging session is active.
+
+	Inferior 1 [process 29412] will be killed.
+
+Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
