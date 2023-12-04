@@ -28,9 +28,9 @@ void add(int num1, int den1, int num2, int den2, int *res_num, int *res_den)
     num1 = num1 * den2;
     num2 = num2 * den1;
     *res_num = num1 + num2;
-    gcdc = find_gcd(*resnum, *resden);
-    *res_num = *res_num / gcd2;
-    
+    gcdc = find_gcd(*res_num, *res_den);
+    *res_num = *res_num / gcdc;
+    *res_den=
   
 }
 void output(int num1, int den1, int num2, int den2, int res_num, int res_den)
