@@ -7,7 +7,7 @@ void input(int *num1, int *den1, int *num2, int *den2)
   printf("Enter the numertor and denominator of the 2nd number: ");
   scanf("%d %d", num2, den2);
 }
-int find_gcd(int a, int b)
+int find_gcd(int *a, int *b)
 {
   int temp;
   while (b != 0)
