@@ -13,7 +13,11 @@ Fraction input()
 }
 int comp(Fraction a,Fraction b)
 {
-  if(a.num*)
+  if(a.num*b.den>a.den*b.num)
+  {
+    return a;
+  }
+  
 }
 Fraction smallest(Fraction a, Fraction b, Fraction c)
 {
