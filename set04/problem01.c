@@ -36,8 +36,8 @@ void add(int num1, int den1, int num2, int den2, int *res_num, int *res_den)
     num2 = num2 * den1;
 
     *res_num = num1 + num2;
-    int resnum=res_num;
-    int resden=res_den;
+    int resnum=*res_num;
+    int resden=*res_den;
      gcd2=find_gcd(resnum,resden);
     *res_num = *res_num / gcd2;
   }

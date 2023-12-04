@@ -44,3 +44,12 @@ c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-ass
      int resden=res_den;
                 ^~~~~~~
 Compilation finished at 12/4/2023, 4:47:10 PM
+Compilation started at 12/4/2023, 4:48:29 PM
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem01.c: In function 'add':
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem01.c:39:16: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+     int resnum=res_num;
+                ^~~~~~~
+c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem01.c:40:16: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+     int resden=res_den;
+                ^~~~~~~
+Compilation finished at 12/4/2023, 4:48:31 PM
