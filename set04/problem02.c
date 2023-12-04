@@ -23,8 +23,7 @@ Fraction comp(Fraction a,Fraction b)
 }
 Fraction smallest(Fraction a, Fraction b, Fraction c)
 {
-  int res;
-  res=comp(comp(a,b),b)
+  return comp(comp(a,b),c);
 }
 void output(Fraction a, Fraction b, Fraction c, Fraction small)
 {
