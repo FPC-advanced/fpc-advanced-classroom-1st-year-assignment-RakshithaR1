@@ -15,9 +15,9 @@ Fraction comp(Fraction a,Fraction b)
 {
   if(a.num*b.den>a.den*b.num)
   {
-    return a;
-  }else{
     return b;
+  }else{
+    return a;
   }
 
 }
