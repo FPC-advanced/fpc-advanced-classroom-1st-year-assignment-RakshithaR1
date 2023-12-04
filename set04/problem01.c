@@ -20,7 +20,7 @@ int find_gcd(int a, int b)
 }
 void add(int num1, int den1, int num2, int den2, int *res_num, int *res_den)
 {
-  int gcd,gcd2;
+  int gcd, gcd2;
   if (den1 == den2)
   {
     *res_num = num1 + num2;
@@ -36,9 +36,9 @@ void add(int num1, int den1, int num2, int den2, int *res_num, int *res_den)
     num2 = num2 * den1;
 
     *res_num = num1 + num2;
-    int resnum=*res_num;
-    int resden=*res_den;
-     gcd2=find_gcd(resnum,resden);
+    int resnum = *res_num;
+    int resden = *res_den;
+    gcd2 = find_gcd(resnum, resden);
     *res_num = *res_num / gcd2;
   }
 }
