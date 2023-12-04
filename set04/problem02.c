@@ -13,9 +13,9 @@ Fraction input()
 }
 Fraction comp(Fraction a, Fraction b)
 {
-  if (a.num * b.den > a.den * b.num)
+  if (a.num * b.den < a.den * b.num)
   {
-    return b;
+    return a;
   }
   else
   {
