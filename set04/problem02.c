@@ -14,7 +14,7 @@ Fraction input()
 Fraction smallest(Fraction a, Fraction b, Fraction c)
 {
 
-  if ((a.num / a.den) < (b.num / b.den) && a.num / a.den < c.num / c.den)
+  if (a.num / a.den < b.num / b.den && a.num / a.den < c.num / c.den)
   {
     return a;
   }
