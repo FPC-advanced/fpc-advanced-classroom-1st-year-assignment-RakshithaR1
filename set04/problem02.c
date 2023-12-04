@@ -11,7 +11,10 @@ Fraction input()
   scanf("%d %d", &a.num, &a.den);
   return a;
 }
-int comp(int a)
+int comp(Fraction a,Fraction b)
+{
+  if(a.num*)
+}
 Fraction smallest(Fraction a, Fraction b, Fraction c)
 {
   
