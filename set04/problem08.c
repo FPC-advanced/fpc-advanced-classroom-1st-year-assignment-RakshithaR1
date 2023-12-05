@@ -42,15 +42,15 @@ Fraction add_fractions(Fraction f1, Fraction f2)
 {
   Fraction sum;
   int gcd;
-  gcd = find_gcd(f1.den, f2.den);
+ 
   sum.den = (f1.den * f2.den);
   f1.num = f1.num * f2.den;
   f2.num = f2.num * f1.den;
   sum.num = f1.num + f2.num;
 
-  int resgcd = find_gcd(sum.num, sum.den);
-  sum.num = sum.num / resgcd;
-  sum.den = sum.den / resgcd;
+  gcd = find_gcd(sum.num, sum.den);
+  sum.num = sum.num / gcd;
+  sum.den = sum.den / gcd;
   return sum;
 }
 Fraction add_n_fractions(int n, Fraction f[n])
