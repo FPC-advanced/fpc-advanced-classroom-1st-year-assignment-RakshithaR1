@@ -16,7 +16,7 @@ float find_weight(float radius, float height, float length)
   we = height * length;
   float guess = sqrt(we);
   sq = radius * radius * radius;
-  const float pi= 3.1415;
+  const float pi = 3.1415;
   return pi * sq * guess;
 }
 void output(float radius, float height, float length, float weight)
