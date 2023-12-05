@@ -9,24 +9,23 @@ int input_n()
 {
   int n;
   printf("Enter the number of camels:\n");
-  scanf("%d",&n);
+  scanf("%d", &n);
   return n;
 }
 void input(int n, Camel c[n], float *truck_weight)
 {
-   for (int i = 0; i < n; i++)
+  for (int i = 0; i < n; i++)
   {
     printf("Enter the height of camel no. %d:\n ", i + 1);
-    scanf("%f",&c[i].height);
+    scanf("%f", &c[i].height);
     printf("Enter the length of camel no. %d:\n ", i + 1);
-    scanf("%f",&c[i].length);
+    scanf("%f", &c[i].length);
     printf("Enter the radius of camel no. %d:\n ", i + 1);
-    scanf("%f",&c[i].radius);
+    scanf("%f", &c[i].radius);
     c[i].weight = 0;
   }
   printf("Enter the weight of the truck:\n ");
   scanf("%f", truck_weight);
-  
 }
 void find_camel_weight(int n, Camel c[n])
 {
@@ -35,7 +34,7 @@ void find_camel_weight(int n, Camel c[n])
     const float pi = 3.1415;
     float cu = 0;
     float preguess = c[i].height * c[i].length, guess;
-    guess=sqrt(preguess);
+    guess = sqrt(preguess);
     cu = c[i].radius * c[i].radius * c[i].radius;
     c[i].weight = pi * cu * guess;
   }
@@ -55,7 +54,7 @@ void output(float total_weight)
 }
 int main()
 {
-  int n=input_n();
+  int n = input_n();
   Camel c[100];
   float truckweight, total;
   input(n, c, &truckweight);
