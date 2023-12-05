@@ -40,8 +40,8 @@ void output(Fraction f1, Fraction f2, Fraction f3, Fraction sum)
 {
   int resnum = f3.num;
   int resden = f3.den;
-  int temp=find_gcd(resnum,resden);
- 
+  int temp = find_gcd(resnum, resden);
+
   sum.num = f3.num / temp;
   sum.den = f3.den / temp;
   printf("%d/%d + %d/%d = %d/%d", f1.num, f1.den, f2.num, f2.den, sum.num, sum.den);
