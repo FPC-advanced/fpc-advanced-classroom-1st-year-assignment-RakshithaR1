@@ -25,7 +25,7 @@ float odd_average(int n, int a[n])
     if (a[i] % 2 != 0)
     {
       sum += a[i];
-      counts += 1;
+      counts ++;
     }
   }
   return sum / counts;
