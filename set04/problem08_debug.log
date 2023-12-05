@@ -79,3 +79,69 @@ No symbol "sum" in current context.
 The program is not being run.
 +n
 The program is not being run.
++b 41
+Breakpoint 1 at 0x4014e3: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem08.c, line 41.
++b 56
+Breakpoint 2 at 0x40155e: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem08.c, line 56.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04/./problem08.exe 
+[New Thread 33728.0x2e0c]
+[New Thread 33728.0x3e48]
+
+Breakpoint 2, add_n_fractions (n=3, f=0x60fbdc)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem08.c:58
+58	  Fraction sum = {0, 0};
++p f[0]
+$1 = {num = 4, den = 3}
++p f[1]
+$2 = {num = 8, den = 9}
++p f[2]
+$3 = {num = 1, den = 2}
++n
+59	  for (int i = 0; i < n; i++)
++n
+61	    sum = add_fractions(sum, f[i]);
++n
+
+Breakpoint 1, add_fractions (f1=..., f2=...)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem08.c:45
+45	  gcd = find_gcd(f1.den, f2.den);
++p f1.num
+$4 = 0
++p f2.den
+$5 = 3
++p f2.num
+$6 = 4
++p f1.den
+$7 = 0
++n
+46	  sum.den = (f1.den * f2.den);
++n
+47	  f1.num = f1.num * f2.den;
++n
+48	  f2.num = f2.num * f1.den;
++n
+49	  sum.num = f1.num + f2.num;
++n
+51	  int resgcd = find_gcd(sum.num, sum.den);
++n
+52	  sum.num = sum.num / resgcd;
++n
+
+Program received signal SIGFPE, Arithmetic exception.
+0x00401540 in add_fractions (f1=..., f2=...)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem08.c:52
+52	  sum.num = sum.num / resgcd;
++nn
+Undefined command: "nn".  Try "help".
++n
+
+Program received signal SIGFPE, Arithmetic exception.
+0x00401540 in add_fractions (f1=..., f2=...)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem08.c:52
+52	  sum.num = sum.num / resgcd;
++n
+[Inferior 1 (process 33728) exited with code 030000000224]
++n
+The program is not being run.
++q
