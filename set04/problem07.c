@@ -28,14 +28,7 @@ Fraction add_fractions(Fraction f1, Fraction f2)
   Fraction s;
   int gcd;
   int lcm;
-  if (f1.den == f2.den)
-  {
-    s.num = f1.num + f2.num;
-    s.den = f1.den;
-    return s;
-  }
-  else
-  {
+ 
     gcd = find_gcd(f1.den, f2.den);
     s.den= (f1.den * f2.den) / gcd;
     
@@ -43,7 +36,7 @@ Fraction add_fractions(Fraction f1, Fraction f2)
     f2.num = f2.num * f1.den;
     s.num = f1.num + f2.num;
     return s;
-  }
+  
  
 }
 void output(Fraction f1, Fraction f2, Fraction f3, Fraction sum)
