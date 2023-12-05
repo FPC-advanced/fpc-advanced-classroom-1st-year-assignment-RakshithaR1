@@ -9,13 +9,13 @@ void input_string(char *a)
 int count_words(char *string)
 {
   int words = 0;
-  char *tok;
-  tok = strtok(string, " ");
+  
+  string = strtok(string, " ");
 
-  while (tok != NULL)
+  while (string != NULL)
   {
     words += 1;
-    tok = strtok(NULL, " ");
+    string = strtok(NULL, " ");
   }
   return words;
 }
@@ -26,10 +26,10 @@ void output(char *string, int no_words)
 int main()
 {
   int words;
-  char a[100], b[100];
+  char a[100],b[100];
   input_string(a);
   strcpy(b, a);
   words = count_words(a);
-  output(a, words);
+  output(b, words);
   return 0;
 }

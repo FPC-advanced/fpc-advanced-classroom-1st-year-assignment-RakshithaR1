@@ -61,3 +61,70 @@ Single stepping until exit from function __mingw_CRTStartup,
 which has no line number information.
 [Inferior 1 (process 456) exited normally]
 +q
++b 9
+Breakpoint 1 at 0x40142e: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem06.c, line 9.
++q
++b 9
+Breakpoint 1 at 0x40142e: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem06.c, line 9.
++n
+The program is not being run.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04/./problem06.exe 
+[New Thread 45796.0x961c]
+[New Thread 45796.0xd08]
+
+Breakpoint 1, count_words (string=0x60fe98 "hello world hello")
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem06.c:11
+warning: Source file is more recent than executable.
+11	  int words = 0;
++n
+13	  tok = strtok(string, " ");
++p tok[0]
+$1 = 89 'Y'
++p tok
+$2 = 0x7652823f <onexit+271> "Y£\210¼Xv‹E\bYë\002\063À_^[ÉÃ", 'Ì' <repeats 14 times>, "‹ÿU‹ìÿu\bèÃþÿÿ÷ØY\033À÷ØH]ÃÌÌÌÌÌÌÌÌÌèžý"
++p *tok
+$3 = 89 'Y'
++n
+15	  while (tok != NULL)
++n
+17	    words += 1;
++n
+18	    tok = strtok(NULL, " ");
++n
+15	  while (tok != NULL)
++p *tok
+$4 = 119 'w'
++n
+17	    words += 1;
++n
+18	    tok = strtok(NULL, " ");
++n
+15	  while (tok != NULL)
++p *tok
+$5 = 104 'h'
++n
+17	    words += 1;
++n
+18	    tok = strtok(NULL, " ");
++n
+15	  while (tok != NULL)
++p *tok
+Cannot access memory at address 0x0
++n
+20	  return words;
++n
+21	}
++n
+main () at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem06.c:33
+33	  output(a, words);
++n
+34	  return 0;
++n
+35	}+n
+0x004010fd in __mingw_CRTStartup ()
++n
+Single stepping until exit from function __mingw_CRTStartup,
+which has no line number information.
+[Inferior 1 (process 45796) exited normally]
++q
