@@ -13,11 +13,11 @@ int has_nice_name(char *c)
 
     if (c[i] == 'a' || c[i] == 'e' || c[i] == 'i' || c[i] == 'u' || c[i] == 'o' || c[i] == 'A' || c[i] == 'E' || c[i] == 'I' || c[i] == 'O' || c[i] == 'U')
     {
-      vov ++;
+      vov++;
     }
     else
     {
-      con += 1;
+      con++;
     }
   }
   if (vov >= 2 && con >= 2)
