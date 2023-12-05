@@ -42,7 +42,7 @@ Fraction add_fractions(Fraction f1, Fraction f2)
 {
   Fraction sum;
   int gcd;
- 
+
   sum.den = (f1.den * f2.den);
   f1.num = f1.num * f2.den;
   f2.num = f2.num * f1.den;
