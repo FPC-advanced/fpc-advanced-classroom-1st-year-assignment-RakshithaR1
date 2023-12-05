@@ -9,7 +9,7 @@ void input_string(char *a)
 int count_words(char *string)
 {
   int words = 0;
-  
+
   string = strtok(string, " ");
 
   while (string != NULL)
@@ -26,7 +26,7 @@ void output(char *string, int no_words)
 int main()
 {
   int words;
-  char a[100],b[100];
+  char a[100], b[100];
   input_string(a);
   strcpy(b, a);
   words = count_words(a);
