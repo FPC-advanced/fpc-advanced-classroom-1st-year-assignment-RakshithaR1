@@ -26,9 +26,7 @@ int find_gcd(int a, int b)
 Fraction add_fractions(Fraction f1, Fraction f2)
 {
   Fraction s;
-  int gcd;
 
-  gcd = find_gcd(f1.den, f2.den);
   s.den = (f1.den * f2.den);
 
   f1.num = f1.num * f2.den;
