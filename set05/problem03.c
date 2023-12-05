@@ -22,9 +22,9 @@ Camel input()
 void find_weight(Camel *c)
 {
   float preguess = c->height * c->length, sq, guess;
-   guess=sqrt(preguess);
+  guess = sqrt(preguess);
   sq = c->radius * c->radius * c->radius;
-  const float pi=3.1415;
+  const float pi = 3.1415;
   c->weight = pi * sq * guess;
 }
 void output(Camel c)
