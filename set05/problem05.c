@@ -9,7 +9,6 @@ int input(int x)
 }
 float borga_x(int x)
 {
-
 }
 void output(int x, float result)
 {
