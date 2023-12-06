@@ -26,7 +26,7 @@ float borga_x(int x)
       i-=1;
       den=fact(m);
       num=pow(x,i);
-      if(num/den<0.000001)
+      if(fabs(num/den)<0.000001)
       {
         sum+=num/den;
         break;
