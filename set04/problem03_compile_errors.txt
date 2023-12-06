@@ -4,3 +4,13 @@ Compilation started at 11/22/2023, 2:06:00 PM
 Compilation finished at 11/22/2023, 2:06:01 PM
 Compilation started at 12/6/2023, 12:29:51 PM
 Compilation finished at 12/6/2023, 12:29:56 PM
+Compilation started at 12/6/2023, 12:30:48 PM
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem03.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Compilation finished at 12/6/2023, 12:30:49 PM
+Compilation started at 12/6/2023, 12:31:01 PM
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem03.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Compilation finished at 12/6/2023, 12:31:02 PM
+Compilation started at 12/6/2023, 12:31:26 PM
+Compilation finished at 12/6/2023, 12:31:27 PM
