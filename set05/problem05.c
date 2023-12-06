@@ -10,7 +10,7 @@ int input(int x)
 int fact(int x)
 {
   int fac=1;
-  for(int i=0;i<=x;i++)
+  for(int i=1;i<=x;i++)
   {
     fac*=i;
   }
