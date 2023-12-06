@@ -19,18 +19,22 @@ int fact(int x)
 float borga_x(int x)
 {
   float sum=0,den,num;
-  int i=0,j=0,k=0,l=0,m=1;
+  int i=0,m=1;
   do{
     if(m%2!=0)
     {
-       i-=1;
       den=fact(m);
       num=pow(x,i);
+      if(num/den<0.000001)
+      {
+        break;
+      }
       sum+=num/den;
        m++; 
     }
    
     i++;
+    i-=1;
   }while(sum>0.000001);
   return sum;
 }
