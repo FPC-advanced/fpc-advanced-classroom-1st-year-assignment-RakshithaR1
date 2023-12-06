@@ -7,8 +7,31 @@ int input(int x)
   scanf("%d", &x);
   return x;
 }
+int fact(int x)
+{
+  int fac=1;
+  for(int i=0;i<=x;i++)
+  {
+    fac*=i;
+  }
+  return fac;
+}
 float borga_x(int x)
 {
+  float sum=0,den,num;
+  int i=0,j=0,k=0,l=0,m=1;
+  do{
+    if(m%2!=0)
+    {
+       i-=1;
+      den=fact(m);
+      num=pow(x,i);
+      sum+=num/den;
+       m++; 
+    }
+   
+    i++;
+  }while(sum>0.000001);
 }
 void output(int x, float result)
 {

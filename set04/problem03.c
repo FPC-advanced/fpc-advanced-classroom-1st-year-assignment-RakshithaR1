@@ -7,22 +7,22 @@ void input_n_and_r(int *n, int *r)
   printf("Enter the value of r: ");
   scanf("%d", r);
 }
+int fact(int a)
+{
+  int fac=1;
+  for(int i=1;i<=a;i++)
+  {
+    fac*=i;
+  }
+  return fac;
+}
 int nCr(int n, int r)
 {
-  int num = 1, den, dif, fac = 1, fac2 = 1, comb;
-  for (int i = 1; i <= n; i++)
-  {
-    num *= i;
-  }
+  int num, den, dif, fac = 1, fac2 = 1, comb;
+  num=fact(n);
   dif = n - r;
-  for (int i = 1; i <= dif; i++)
-  {
-    fac *= i;
-  }
-  for (int i = 1; i <= r; i++)
-  {
-    fac2 *= i;
-  }
+  fac=fact(dif);
+  fac2=fact(r); 
   den = fac * fac2;
   comb = num / den;
   return comb;
