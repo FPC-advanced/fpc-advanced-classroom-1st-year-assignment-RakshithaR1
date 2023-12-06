@@ -32,6 +32,7 @@ float borga_x(int x)
    
     i++;
   }while(sum>0.000001);
+  return sum;
 }
 void output(int x, float result)
 {
