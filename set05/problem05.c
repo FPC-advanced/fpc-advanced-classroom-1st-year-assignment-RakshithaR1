@@ -23,6 +23,7 @@ float borga_x(int x)
   do{
     if(m%2!=0)
     {
+      i-=1;
       den=fact(m);
       num=pow(x,i);
       if(num/den<0.000001)
@@ -34,7 +35,7 @@ float borga_x(int x)
     }
     m++; 
     i++;
-    i-=1;
+    
   }while(sum>0.000001);
   return sum;
 }
