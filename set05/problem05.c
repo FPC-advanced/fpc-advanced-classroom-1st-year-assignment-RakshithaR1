@@ -30,9 +30,9 @@ float borga_x(int x)
         break;
       }
       sum+=num/den;
-       m++; 
+       
     }
-   
+    m++; 
     i++;
     i-=1;
   }while(sum>0.000001);
