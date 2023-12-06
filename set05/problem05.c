@@ -37,7 +37,7 @@ float borga_x(int x)
     m++; 
     i++;
     
-  }while(sum>0.000001);
+  }while(fabs(sum)>0.000001);
   return sum;
 }
 void output(int x, float result)
