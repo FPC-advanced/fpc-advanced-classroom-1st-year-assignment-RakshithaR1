@@ -12,9 +12,9 @@ int nCr(int n, int r)
 {
  int diff=n-r,i=n,j=1,k=1,l=1;
  int diff2=i-diff;
- while(r!=0&&k<r)
+ while(r!=0&&k<=r)
  {
-   if(i<diff2)
+   if(i>diff2)
    {
     j*=i;
     i--;

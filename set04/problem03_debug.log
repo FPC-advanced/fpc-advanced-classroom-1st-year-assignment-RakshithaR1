@@ -119,3 +119,177 @@ A debugging session is active.
 	Inferior 1 [process 800] will be killed.
 
 Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
++b 11
+Breakpoint 1 at 0x40144d: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem03.c, line 11.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04/./problem03.exe 
+[New Thread 20752.0x564c]
+[New Thread 20752.0x5c50]
+
+Breakpoint 1, nCr (n=6, r=3)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem03.c:13
+13	 int diff=n-r,i=n,j=1,k=1,l=1;
++n
+14	 int diff2=i-diff;
++n
+15	 while(r!=0&&k<r)
++n
+17	   if(i<diff2)
++n
+22	   if(i==diff2&&k<=r)
++n
+15	 while(r!=0&&k<r)
++n
+17	   if(i<diff2)
++p i
+$1 = 6
++n
+22	   if(i==diff2&&k<=r)
++n
+15	 while(r!=0&&k<r)
++p i
+$2 = 6
++n
+17	   if(i<diff2)
++n
+22	   if(i==diff2&&k<=r)
++q
+A debugging session is active.
+
+	Inferior 1 [process 20752] will be killed.
+
+Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
++b 11
+Breakpoint 1 at 0x40144d: file c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem03.c, line 11.
++r
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04/./problem03.exe 
+[New Thread 3384.0x1560]
+[New Thread 3384.0x360c]
+
+Breakpoint 1, nCr (n=6, r=3)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem03.c:13
+13	 int diff=n-r,i=n,j=1,k=1,l=1;
++n
+14	 int diff2=i-diff;
++n
+15	 while(r!=0&&k<r)
++n
+17	   if(i>diff2)
++n
+19	    j*=i;
++n
+20	    i--;
++n
+22	   if(i==diff2&&k<=r)
++n
+15	 while(r!=0&&k<r)
++p i
+$1 = 5
++n
+17	   if(i>diff2)
++n
+19	    j*=i;
++n
+20	    i--;
++p j
+$2 = 30
++n
+22	   if(i==diff2&&k<=r)
++n
+15	 while(r!=0&&k<r)
++n
+17	   if(i>diff2)
++n
+19	    j*=i;
++n
+20	    i--;
++p j
+$3 = 120
++n
+22	   if(i==diff2&&k<=r)
++n
+24	     l*=k;
++p j
+$4 = 120
++n
+25	     k++;
++n
+15	 while(r!=0&&k<r)
++p k
+$5 = 2
++p r
+$6 = 3
++n
+17	   if(i>diff2)
++n
+22	   if(i==diff2&&k<=r)
++n
+24	     l*=k;
++n
+25	     k++;
++n
+15	 while(r!=0&&k<r)
++n
+28	return j/l;
++p j/l
+$7 = 60
++p j
+$8 = 120
++p l
+$9 = 2
++r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+Starting program: c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04/./problem03.exe 
+[New Thread 22480.0xb30]
+[New Thread 22480.0x2464]
+
+Breakpoint 1, nCr (n=6, r=3)
+    at c:\Users\raksh\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-RakshithaR1\set04\problem03.c:13
+13	 int diff=n-r,i=n,j=1,k=1,l=1;
++n
+14	 int diff2=i-diff;
++n
+15	 while(r!=0&&k<r)
++n
+17	   if(i>diff2)
++n
+19	    j*=i;
++n
+20	    i--;
++n
+22	   if(i==diff2&&k<=r)
++n
+15	 while(r!=0&&k<r)
++n
+17	   if(i>diff2)
++n
+19	    j*=i;
++n
+20	    i--;
++n
+22	   if(i==diff2&&k<=r)
++n
+15	 while(r!=0&&k<r)
++n
+17	   if(i>diff2)
++n
+19	    j*=i;
++n
+20	    i--;
++n
+22	   if(i==diff2&&k<=r)
++n
+24	     l*=k;
++n
+25	     k++;
++n
+15	 while(r!=0&&k<r)
++p k
+$10 = 2
++q
+A debugging session is active.
+
+	Inferior 1 [process 22480] will be killed.
+
+Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
