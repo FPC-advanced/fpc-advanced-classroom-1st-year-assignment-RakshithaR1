@@ -19,7 +19,7 @@ int fact(int x)
 float borga_x(int x)
 {
   float sum=0,den,num;
-  int i=0,m=1;
+  int i=1,m=1;
   do{
     if(m%2!=0)
     {
